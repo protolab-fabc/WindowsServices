@@ -1,0 +1,399 @@
+[17-08-26 16:20:10] ============================================================
+[17-08-26 16:20:10] Demarrage maintenance Minecraft
+[17-08-26 16:20:10] Date : 17-08-26 16:20:10
+[17-08-26 16:20:10] Dossier serveur : C:\MinecraftServer
+[17-08-26 16:20:10] [1/7] Lecture de la derniere version stable Minecraft...
+[17-08-26 16:20:10] ERREUR CRITIQUE - Impossible de recuperer la derniere version stable depuis Mojang.
+[17-08-26 16:22:34] ============================================================
+[17-08-26 16:22:34] Demarrage maintenance Minecraft
+[17-08-26 16:22:34] Date : 17-08-26 16:22:34
+[17-08-26 16:22:34] Dossier serveur : C:\MinecraftServer
+[17-08-26 16:22:34] [1/7] Lecture de la derniere version stable Minecraft...
+[17-08-26 16:22:34] OK - Derniere version stable Mojang : 26.2
+[17-08-26 16:22:35] INFO - Version detectee depuis server.jar : 1.21.11
+[17-08-26 16:22:35] Version locale actuelle : 1.21.11
+[17-08-26 16:22:35] INFO - Mise a jour necessaire : 1.21.11 -> 26.2
+[17-08-26 16:22:35] [2/7] Verification de l'etat du serveur...
+[17-08-26 16:22:35] INFO - Le serveur Minecraft est actuellement arrete.
+[17-08-26 16:22:35] [3/7] Pas de joueurs a avertir (serveur arrete).
+[17-08-26 16:22:35] [4/7] Pas d'arret requis (serveur deja arrete).
+[17-08-26 16:22:35] [5/7] Creation de la sauvegarde compresse...
+[17-08-26 16:22:35] Creation de l'archive : C:\MinecraftServer\backups\backup_20260817_162235.zip
+[17-08-26 16:23:11] ============================================================
+[17-08-26 16:23:12] Demarrage maintenance Minecraft
+[17-08-26 16:23:12] Date : 17-08-26 16:23:12
+[17-08-26 16:23:12] Dossier serveur : C:\MinecraftServer
+[17-08-26 16:23:12] [1/7] Lecture de la derniere version stable Minecraft...
+[17-08-26 16:23:12] OK - Derniere version stable Mojang : 26.2
+[17-08-26 16:23:12] Version locale actuelle : 1.21.11
+[17-08-26 16:23:12] INFO - Mise a jour necessaire : 1.21.11 -> 26.2
+[17-08-26 16:23:12] [2/7] Verification de l'etat du serveur...
+[17-08-26 16:23:12] INFO - Le serveur Minecraft est actuellement arrete.
+[17-08-26 16:23:12] [3/7] Pas de joueurs a avertir (serveur arrete).
+[17-08-26 16:23:12] [4/7] Pas d'arret requis (serveur deja arrete).
+[17-08-26 16:23:12] [5/7] Creation de la sauvegarde compresse...
+[17-08-26 16:23:12] Creation de l'archive : C:\MinecraftServer\backups\backup_20260817_162312.zip
+[17-08-26 16:23:13] ERREUR - 7-Zip a retourne le code 1
+[17-08-26 16:23:13] ERREUR - La sauvegarde a echoue. Relance du serveur avec la version existante...
+[17-08-26 16:23:13] OK - Processus Java lance (-Xmx49G -Xms32G)
+[17-08-26 16:23:56] ============================================================
+[17-08-26 16:23:56] Demarrage maintenance Minecraft
+[17-08-26 16:23:56] Date : 17-08-26 16:23:56
+[17-08-26 16:23:56] Dossier serveur : C:\MinecraftServer
+[17-08-26 16:23:56] [1/7] Lecture de la derniere version stable Minecraft...
+[17-08-26 16:23:56] OK - Derniere version stable Mojang : 26.2
+[17-08-26 16:23:56] Version locale actuelle : 1.21.11
+[17-08-26 16:23:56] INFO - Mise a jour necessaire : 1.21.11 -> 26.2
+[17-08-26 16:23:56] [2/7] Verification de l'etat du serveur...
+[17-08-26 16:23:56] INFO - Le serveur Minecraft est actuellement en cours d'execution.
+[17-08-26 16:23:58] OK - RCON operationnel. Joueurs : There are 1 of a max of 100 players online: Vibrions
+
+[17-08-26 16:23:58] [3/7] Avertissement des joueurs...
+[17-08-26 16:25:02] [4/7] Sauvegarde et arret du serveur...
+[17-08-26 16:25:10] OK - Serveur arrete proprement.
+[17-08-26 16:25:10] [5/7] Creation de la sauvegarde compresse...
+[17-08-26 16:25:10] Creation de l'archive : C:\MinecraftServer\backups\backup_20260817_162510.zip
+[17-08-26 16:25:11] OK - Sauvegarde reussie : C:\MinecraftServer\backups\backup_20260817_162510.zip (77,49 Mo)
+[17-08-26 16:25:11] [6/7] Recuperation du server.jar officiel 26.2...
+[17-08-26 16:25:11] Telechargement depuis Mojang : https://piston-data.mojang.com/v1/objects/823e2250d24b3ddac457a60c92a6a941943fcd6a/server.jar
+[17-08-26 16:25:12] OK - Fichier server.jar valide verifie.
+[17-08-26 16:25:12] OK - Ancien JAR sauvegarde dans server-old.jar
+[17-08-26 16:25:12] OK - Mise a jour appliquee avec succes : Minecraft 26.2
+[17-08-26 16:25:12] [7/7] Redemarrage du serveur Minecraft...
+[17-08-26 16:25:13] OK - Processus Java lance (-Xmx49G -Xms32G)
+[17-08-26 16:25:52] ============================================================
+[17-08-26 16:25:52] Demarrage maintenance Minecraft
+[17-08-26 16:25:52] Date : 17-08-26 16:25:52
+[17-08-26 16:25:52] Dossier serveur : C:\MinecraftServer
+[17-08-26 16:25:52] [1/7] Lecture de la derniere version stable Minecraft...
+[17-08-26 16:25:52] OK - Derniere version stable Mojang : 26.2
+[17-08-26 16:25:52] Version locale actuelle : 26.2
+[17-08-26 16:25:52] INFO - Serveur deja a jour (26.2)
+[17-08-26 16:25:52] [2/7] Verification de l'etat du serveur...
+[17-08-26 16:25:52] INFO - Le serveur Minecraft est actuellement en cours d'execution.
+[17-08-26 16:25:54] OK - RCON operationnel. Joueurs : There are 0 of a max of 100 players online: 
+
+[17-08-26 16:25:54] [3/7] Avertissement des joueurs...
+[17-08-26 16:26:57] [4/7] Sauvegarde et arret du serveur...
+[17-08-26 16:27:03] OK - Serveur arrete proprement.
+[17-08-26 16:27:03] [5/7] Creation de la sauvegarde compresse...
+[17-08-26 16:27:03] Creation de l'archive : C:\MinecraftServer\backups\backup_20260817_162703.zip
+[17-08-26 16:27:04] OK - Sauvegarde reussie : C:\MinecraftServer\backups\backup_20260817_162703.zip (77,5 Mo)
+[17-08-26 16:27:04] [6/7] Aucune mise a jour a telecharger.
+[17-08-26 16:27:04] [7/7] Redemarrage du serveur Minecraft...
+[17-08-26 16:27:04] OK - Processus Java lance (-Xmx49G -Xms32G)
+[17-08-26 16:28:42] ============================================================
+[17-08-26 16:28:42] Demarrage maintenance Minecraft
+[17-08-26 16:28:42] Date : 17-08-26 16:28:42
+[17-08-26 16:28:42] Dossier serveur : C:\MinecraftServer
+[17-08-26 16:28:42] [1/7] Lecture de la derniere version stable Minecraft...
+[17-08-26 16:28:42] OK - Derniere version stable Mojang : 26.2
+[17-08-26 16:28:43] Version locale actuelle : 26.2
+[17-08-26 16:28:43] INFO - Serveur deja a jour (26.2)
+[17-08-26 16:28:43] [2/7] Verification de l'etat du serveur...
+[17-08-26 16:28:43] INFO - Le serveur Minecraft est actuellement en cours d'execution.
+[17-08-26 16:28:44] OK - RCON operationnel. Joueurs : There are 0 of a max of 100 players online: 
+
+[17-08-26 16:28:44] [3/7] Avertissement des joueurs...
+[17-08-26 16:29:22] ============================================================
+[17-08-26 16:29:48] [4/7] Sauvegarde et arret du serveur...
+[17-08-26 16:29:54] OK - Serveur arrete proprement.
+[17-08-26 16:29:54] [5/7] Creation de la sauvegarde compresse...
+[17-08-26 16:29:54] Creation de l'archive : C:\MinecraftServer\backups\backup_20260817_162954.zip
+[17-08-26 16:29:55] OK - Sauvegarde reussie : C:\MinecraftServer\backups\backup_20260817_162954.zip (77,77 Mo)
+[17-08-26 16:29:55] [6/7] Aucune mise a jour a telecharger.
+[17-08-26 16:29:55] [7/7] Redemarrage du serveur Minecraft...
+[17-08-26 16:29:55] OK - Processus Java lance (-Xmx49G -Xms32G)
+[17-08-26 16:31:49] Demarrage maintenance Minecraft
+[17-08-26 16:31:50] Date : 17-08-26 16:31:50
+[17-08-26 16:31:51] Dossier serveur : C:\MinecraftServer
+[17-08-26 16:31:52] [1/7] Lecture de la derniere version stable Minecraft...
+[17-08-26 16:31:54] OK - Derniere version stable Mojang : 26.2
+[17-08-26 16:31:56] Version locale actuelle : 26.2
+[17-08-26 16:32:19] INFO - Serveur deja a jour (26.2)
+[17-08-26 16:32:20] [2/7] Verification de l'etat du serveur...
+[17-08-26 16:32:21] INFO - Le serveur Minecraft est actuellement en cours d'execution.
+[17-08-26 16:32:23] OK - RCON operationnel. Joueurs : There are 1 of a max of 100 players online: Vibrions
+
+[17-08-26 16:32:25] ============================================================
+[17-08-26 16:32:25] Demarrage maintenance Minecraft
+[17-08-26 16:32:25] Date : 17-08-26 16:32:25
+[17-08-26 16:32:25] Dossier serveur : C:\MinecraftServer
+[17-08-26 16:32:25] [1/7] Lecture de la derniere version stable Minecraft...
+[17-08-26 16:32:25] OK - Derniere version stable Mojang : 26.2
+[17-08-26 16:32:25] Version locale actuelle : 26.2
+[17-08-26 16:32:25] INFO - Serveur deja a jour (26.2)
+[17-08-26 16:32:25] [2/7] Verification de l'etat du serveur...
+[17-08-26 16:32:25] INFO - Le serveur Minecraft est actuellement en cours d'execution.
+[17-08-26 16:32:27] OK - RCON operationnel. Joueurs : There are 1 of a max of 100 players online: Vibrions
+
+[17-08-26 16:32:27] [3/7] Avertissement des joueurs...
+[17-08-26 16:32:44] [3/7] Avertissement des joueurs...
+[17-08-26 16:33:31] [4/7] Sauvegarde et arret du serveur...
+[17-08-26 16:33:37] OK - Serveur arrete proprement.
+[17-08-26 16:33:37] [5/7] Creation de la sauvegarde compresse...
+[17-08-26 16:33:37] Creation de l'archive : C:\MinecraftServer\backups\backup_20260817_163337.zip
+[17-08-26 16:33:38] OK - Sauvegarde reussie : C:\MinecraftServer\backups\backup_20260817_163337.zip (77,83 Mo)
+[17-08-26 16:33:38] [6/7] Aucune mise a jour a telecharger.
+[17-08-26 16:33:38] [7/7] Redemarrage du serveur Minecraft...
+[17-08-26 16:33:38] OK - Processus Java lance (-Xmx49G -Xms32G)
+[17-08-26 16:33:47] [4/7] Sauvegarde et arret du serveur...
+[17-08-26 16:33:53] OK - Serveur arrete proprement.
+[17-08-26 16:33:54] [5/7] Creation de la sauvegarde compresse...
+[17-08-26 16:34:04] Creation de l'archive : C:\MinecraftServer\backups\backup_20260817_163404.zip
+[17-08-26 16:34:07] OK - Sauvegarde reussie : C:\MinecraftServer\backups\backup_20260817_163404.zip (77,83 Mo)
+[17-08-26 16:34:08] [6/7] Aucune mise a jour a telecharger.
+[17-08-26 16:34:08] [7/7] Redemarrage du serveur Minecraft...
+[17-08-26 16:34:09] OK - Processus Java lance (-Xmx49G -Xms32G)
+[17-08-26 16:34:14] OK - Serveur redemarre et operationnel.
+[17-08-26 16:34:15] RESULTAT : SAUVEGARDE TERMINEE AVEC SUCCES (SERVEUR A JOUR).
+[17-08-26 16:35:12] ============================================================
+[17-08-26 16:35:12] Demarrage maintenance Minecraft
+[17-08-26 16:35:12] Date : 17-08-26 16:35:12
+[17-08-26 16:35:12] Dossier serveur : C:\MinecraftServer
+[17-08-26 16:35:12] [1/7] Lecture de la derniere version stable Minecraft...
+[17-08-26 16:35:13] OK - Derniere version stable Mojang : 26.2
+[17-08-26 16:35:13] Version locale actuelle : 26.2
+[17-08-26 16:35:13] INFO - Serveur deja a jour (26.2)
+[17-08-26 16:35:14] [2/7] Verification de l'etat du serveur...
+[17-08-26 16:35:14] INFO - Le serveur Minecraft est actuellement en cours d'execution.
+[17-08-26 16:35:15] OK - RCON operationnel. Joueurs : There are 1 of a max of 100 players online: Vibrions
+
+[17-08-26 16:35:15] [3/7] Avertissement des joueurs...
+[17-08-26 16:36:02] ============================================================
+[17-08-26 16:36:02] Demarrage maintenance Minecraft
+[17-08-26 16:36:02] Date : 17-08-26 16:36:02
+[17-08-26 16:36:02] Dossier serveur : C:\MinecraftServer
+[17-08-26 16:36:02] [1/7] Lecture de la derniere version stable Minecraft...
+[17-08-26 16:36:02] OK - Derniere version stable Mojang : 26.2
+[17-08-26 16:36:02] Version locale actuelle : 26.2
+[17-08-26 16:36:02] INFO - Serveur deja a jour (26.2)
+[17-08-26 16:36:02] [2/7] Verification de l'etat du serveur...
+[17-08-26 16:36:02] INFO - Le serveur Minecraft est actuellement en cours d'execution.
+[17-08-26 16:36:04] OK - RCON operationnel. Joueurs : There are 1 of a max of 100 players online: Vibrions
+
+[17-08-26 16:36:04] [3/7] Avertissement des joueurs...
+[17-08-26 16:36:17] [4/7] Sauvegarde et arret du serveur...
+[17-08-26 16:36:21] OK - Serveur arrete proprement.
+[17-08-26 16:36:21] [5/7] Creation de la sauvegarde compresse...
+[17-08-26 16:36:21] Creation de l'archive : C:\MinecraftServer\backups\backup_20260817_163621.zip
+[17-08-26 16:36:21] OK - Sauvegarde reussie : C:\MinecraftServer\backups\backup_20260817_163621.zip (77,86 Mo)
+[17-08-26 16:36:21] [6/7] Aucune mise a jour a telecharger.
+[17-08-26 16:36:21] [7/7] Redemarrage du serveur Minecraft...
+[17-08-26 16:36:22] OK - Processus Java lance (-Xmx49G -Xms32G)
+[17-08-26 16:36:22] RESULTAT : SAUVEGARDE TERMINEE AVEC SUCCES (SERVEUR A JOUR).
+[17-08-26 16:36:22] FIN DE LA MAINTENANCE.
+[17-08-26 16:36:26] ============================================================
+[17-08-26 16:36:26] Demarrage maintenance Minecraft
+[17-08-26 16:36:26] Date : 17-08-26 16:36:26
+[17-08-26 16:36:26] Dossier serveur : C:\MinecraftServer
+[17-08-26 16:36:26] [1/7] Lecture de la derniere version stable Minecraft...
+[17-08-26 16:36:26] OK - Derniere version stable Mojang : 26.2
+[17-08-26 16:36:26] Version locale actuelle : 26.2
+[17-08-26 16:36:26] INFO - Serveur deja a jour (26.2)
+[17-08-26 16:36:26] [2/7] Verification de l'etat du serveur...
+[17-08-26 16:36:26] INFO - Le serveur Minecraft est actuellement en cours d'execution.
+[17-08-26 16:36:28] OK - RCON operationnel. Joueurs : There are 0 of a max of 100 players online: 
+
+[17-08-26 16:36:28] [3/7] Avertissement des joueurs...
+[17-08-26 16:37:07] [4/7] Sauvegarde et arret du serveur...
+[17-08-26 16:37:15] OK - Serveur arrete proprement.
+[17-08-26 16:37:15] [5/7] Creation de la sauvegarde compresse...
+[17-08-26 16:37:15] Creation de l'archive : C:\MinecraftServer\backups\backup_20260817_163715.zip
+[17-08-26 16:37:16] OK - Sauvegarde reussie : C:\MinecraftServer\backups\backup_20260817_163715.zip (77,89 Mo)
+[17-08-26 16:37:16] [6/7] Aucune mise a jour a telecharger.
+[17-08-26 16:37:16] [7/7] Redemarrage du serveur Minecraft...
+[17-08-26 16:37:16] OK - Processus Java lance (-Xmx49G -Xms32G)
+[17-08-26 16:37:16] RESULTAT : SAUVEGARDE TERMINEE AVEC SUCCES (SERVEUR A JOUR).
+[17-08-26 16:37:17] FIN DE LA MAINTENANCE.
+[17-08-26 16:38:24] [4/7] Sauvegarde et arret du serveur...
+[17-08-26 16:39:50] OK - Serveur arrete proprement.
+[17-08-26 16:39:50] [5/7] Creation de la sauvegarde compresse...
+[17-08-26 16:39:50] Creation de l'archive : C:\MinecraftServer\backups\backup_20260817_163950.zip
+[17-08-26 16:39:50] OK - Sauvegarde reussie : C:\MinecraftServer\backups\backup_20260817_163950.zip (77,89 Mo)
+[17-08-26 16:39:50] [6/7] Aucune mise a jour a telecharger.
+[17-08-26 16:39:51] [7/7] Redemarrage du serveur Minecraft...
+[17-08-26 16:39:51] OK - Processus Java lance (-Xmx49G -Xms32G)
+[17-08-26 16:39:51] RESULTAT : SAUVEGARDE TERMINEE AVEC SUCCES (SERVEUR A JOUR).
+[17-08-26 16:39:51] FIN DE LA MAINTENANCE.
+[17-08-26 16:40:14] ============================================================
+[17-08-26 16:40:14] Demarrage maintenance Minecraft
+[17-08-26 16:40:14] Date : 17-08-26 16:40:14
+[17-08-26 16:40:14] Dossier serveur : C:\MinecraftServer
+[17-08-26 16:40:14] [1/7] Lecture de la derniere version stable Minecraft...
+[17-08-26 16:40:14] OK - Derniere version stable Mojang : 26.2
+[17-08-26 16:40:14] Version locale actuelle : 26.2
+[17-08-26 16:40:15] INFO - Serveur deja a jour (26.2)
+[17-08-26 16:40:15] [2/7] Verification de l'etat du serveur...
+[17-08-26 16:40:15] INFO - Le serveur Minecraft est actuellement en cours d'execution.
+[17-08-26 16:40:16] OK - RCON operationnel. Joueurs : There are 0 of a max of 100 players online: 
+
+[17-08-26 16:40:16] [3/7] Avertissement des joueurs...
+[17-08-26 16:41:20] [4/7] Sauvegarde et arret du serveur...
+[17-08-26 16:41:26] OK - Serveur arrete proprement.
+[17-08-26 16:41:26] [5/7] Creation de la sauvegarde compresse...
+[17-08-26 16:41:26] Creation de l'archive : C:\MinecraftServer\backups\backup_20260817_164126.zip
+[17-08-26 16:41:27] OK - Sauvegarde reussie : C:\MinecraftServer\backups\backup_20260817_164126.zip (77,91 Mo)
+[17-08-26 16:41:27] [6/7] Aucune mise a jour a telecharger.
+[17-08-26 16:41:27] [7/7] Redemarrage du serveur Minecraft...
+[17-08-26 16:41:27] OK - Processus Java lance (-Xmx49G -Xms32G)
+[17-08-26 16:42:27] ============================================================
+[17-08-26 16:42:27] Demarrage maintenance Minecraft
+[17-08-26 16:42:27] Date : 17-08-26 16:42:27
+[17-08-26 16:42:27] Dossier serveur : C:\MinecraftServer
+[17-08-26 16:42:27] [1/7] Lecture de la derniere version stable Minecraft...
+[17-08-26 16:42:27] OK - Derniere version stable Mojang : 26.2
+[17-08-26 16:42:27] Version locale actuelle : 26.2
+[17-08-26 16:42:27] INFO - Serveur deja a jour (26.2)
+[17-08-26 16:42:27] [2/7] Verification de l'etat du serveur...
+[17-08-26 16:42:27] INFO - Le serveur Minecraft est actuellement en cours d'execution.
+[17-08-26 16:42:29] OK - RCON operationnel. Joueurs : There are 0 of a max of 100 players online: 
+
+[17-08-26 16:42:29] [3/7] Avertissement des joueurs...
+[17-08-26 16:42:30] ATTENTION - Une instance de maintenance est deja en cours d'execution. Annulation.
+[17-08-26 16:43:33] [4/7] Sauvegarde et arret du serveur...
+[17-08-26 16:43:39] OK - Serveur arrete proprement.
+[17-08-26 16:43:39] [5/7] Creation de la sauvegarde compresse...
+[17-08-26 16:43:39] Creation de l'archive : C:\MinecraftServer\backups\backup_20260817_164339.zip
+[17-08-26 16:43:39] OK - Sauvegarde reussie : C:\MinecraftServer\backups\backup_20260817_164339.zip (77,91 Mo)
+[17-08-26 16:43:39] [6/7] Aucune mise a jour a telecharger.
+[17-08-26 16:43:39] [7/7] Redemarrage du serveur Minecraft...
+[17-08-26 16:43:39] OK - Processus Java lance (-Xmx49G -Xms32G)
+[18-08-26 17:12:53] ============================================================
+[18-08-26 17:12:53] Demarrage maintenance Minecraft
+[18-08-26 17:12:53] Date : 18-08-26 17:12:53
+[18-08-26 17:12:53] Dossier serveur : C:\WindowsServices
+[18-08-26 17:12:53] [1/7] Lecture de la derniere version stable Minecraft...
+[18-08-26 17:12:53] OK - Derniere version stable Mojang : 26.2
+[18-08-26 17:12:53] Version locale actuelle : 26.2
+[18-08-26 17:12:53] INFO - Serveur deja a jour (26.2)
+[18-08-26 17:12:53] [2/7] Verification de l'etat du serveur...
+[18-08-26 17:12:53] INFO - Le serveur Minecraft est actuellement arrete.
+[18-08-26 17:12:53] [3/7] Pas de joueurs a avertir (serveur arrete).
+[18-08-26 17:12:53] [4/7] Pas d'arret requis (serveur deja arrete).
+[18-08-26 17:12:53] [5/7] Creation de la sauvegarde compresse...
+[18-08-26 17:12:53] Creation de l'archive : C:\WindowsServices\backups\backup_20260818_171253.zip
+[18-08-26 17:12:54] OK - Sauvegarde reussie : C:\WindowsServices\backups\backup_20260818_171253.zip (199,64 Mo)
+[18-08-26 17:12:54] [6/7] Aucune mise a jour a telecharger.
+[18-08-26 17:12:54] [7/7] Redemarrage du serveur Minecraft...
+[18-08-26 17:12:54] OK - Processus Java lance (-Xmx49G -Xms2G -XX:+UseG1GC -XX:G1PeriodicGCInterval=30000 -XX:G1PeriodicGCSystemLoadThreshold=0.0)
+[18-08-26 17:13:00] OK - Serveur redemarre et operationnel.
+[18-08-26 17:13:00] RESULTAT : SAUVEGARDE TERMINEE AVEC SUCCES (SERVEUR A JOUR).
+[18-08-26 17:13:00] FIN DE LA MAINTENANCE.
+[18-08-26 17:13:10] ============================================================
+[18-08-26 17:13:10] Demarrage maintenance Minecraft
+[18-08-26 17:13:10] Date : 18-08-26 17:13:10
+[18-08-26 17:13:10] Dossier serveur : C:\WindowsServices
+[18-08-26 17:13:10] [1/7] Lecture de la derniere version stable Minecraft...
+[18-08-26 17:13:10] OK - Derniere version stable Mojang : 26.2
+[18-08-26 17:13:10] Version locale actuelle : 26.2
+[18-08-26 17:13:10] INFO - Serveur deja a jour (26.2)
+[18-08-26 17:13:10] [2/7] Verification de l'etat du serveur...
+[18-08-26 17:13:10] INFO - Le serveur Minecraft est actuellement en cours d'execution.
+[18-08-26 17:13:11] OK - RCON operationnel. Joueurs : There are 1 of a max of 100 players online: Vibrions
+
+[18-08-26 17:13:11] [3/7] Avertissement des joueurs...
+[18-08-26 17:14:14] [4/7] Sauvegarde et arret du serveur...
+[18-08-26 17:14:18] OK - Serveur arrete proprement.
+[18-08-26 17:14:18] [5/7] Creation de la sauvegarde compresse...
+[18-08-26 17:14:18] Creation de l'archive : C:\WindowsServices\backups\backup_20260818_171418.zip
+[18-08-26 17:14:19] OK - Sauvegarde reussie : C:\WindowsServices\backups\backup_20260818_171418.zip (199,64 Mo)
+[18-08-26 17:14:19] [6/7] Aucune mise a jour a telecharger.
+[18-08-26 17:14:19] [7/7] Redemarrage du serveur Minecraft...
+[18-08-26 17:14:19] OK - Processus Java lance (-Xmx49G -Xms2G -XX:+UseG1GC -XX:G1PeriodicGCInterval=30000 -XX:G1PeriodicGCSystemLoadThreshold=0.0)
+[18-08-26 17:14:25] OK - Serveur redemarre et operationnel.
+[18-08-26 17:14:25] RESULTAT : SAUVEGARDE TERMINEE AVEC SUCCES (SERVEUR A JOUR).
+[18-08-26 17:14:25] FIN DE LA MAINTENANCE.
+[19-08-26 01:00:01] ============================================================
+[19-08-26 01:00:01] Demarrage maintenance Minecraft
+[19-08-26 01:00:01] Date : 19-08-26 01:00:01
+[19-08-26 01:00:01] Dossier serveur : C:\WindowsServices
+[19-08-26 01:00:01] [1/7] Lecture de la derniere version stable Minecraft...
+[19-08-26 01:00:01] OK - Derniere version stable Mojang : 26.2
+[19-08-26 01:00:01] Version locale actuelle : 26.2
+[19-08-26 01:00:01] INFO - Serveur deja a jour (26.2)
+[19-08-26 01:00:01] [2/7] Verification de l'etat du serveur...
+[19-08-26 01:00:01] INFO - Le serveur Minecraft est actuellement en cours d'execution.
+[19-08-26 01:00:02] OK - RCON operationnel. Joueurs : There are 0 of a max of 100 players online: 
+
+[19-08-26 01:00:02] [3/7] Avertissement des joueurs...
+[19-08-26 01:01:05] [4/7] Sauvegarde et arret du serveur...
+[19-08-26 01:01:09] OK - Serveur arrete proprement.
+[19-08-26 01:01:09] [5/7] Creation de la sauvegarde compresse...
+[19-08-26 01:01:09] Creation de l'archive : C:\WindowsServices\backups\backup_20260819_010109.zip
+[19-08-26 01:01:11] OK - Sauvegarde reussie : C:\WindowsServices\backups\backup_20260819_010109.zip (199,65 Mo)
+[19-08-26 01:01:11] [6/7] Aucune mise a jour a telecharger.
+[19-08-26 01:01:11] [7/7] Redemarrage du serveur Minecraft...
+[19-08-26 01:01:11] OK - Processus Java lance (-Xmx49G -Xms2G -XX:+UseG1GC -XX:G1PeriodicGCInterval=30000 -XX:G1PeriodicGCSystemLoadThreshold=0.0)
+[19-08-26 10:34:34] INFO - Serveur lance. En attente de disponibilite complete.
+[19-08-26 10:34:34] RESULTAT : SAUVEGARDE TERMINEE AVEC SUCCES (SERVEUR A JOUR).
+[19-08-26 10:34:34] FIN DE LA MAINTENANCE.
+[19-08-26 11:07:15] ============================================================
+[19-08-26 11:07:15] Demarrage maintenance Minecraft
+[19-08-26 11:07:15] Date : 19-08-26 11:07:15
+[19-08-26 11:07:15] Dossier serveur : C:\WindowsServices
+[19-08-26 11:07:15] [1/8] Lecture de la derniere version stable Minecraft...
+[19-08-26 11:07:15] OK - Derniere version stable Mojang : 26.2
+[19-08-26 11:07:15] Version locale actuelle : 26.2
+[19-08-26 11:07:15] INFO - Serveur deja a jour (26.2)
+[19-08-26 11:07:15] [2/8] Verification de l'etat du serveur...
+[19-08-26 11:07:15] INFO - Le serveur Minecraft est actuellement arrete.
+[19-08-26 11:07:15] [3/8] Pas de joueurs a avertir (serveur arrete).
+[19-08-26 11:07:15] [4/8] Pas d'arret requis (serveur deja arrete).
+[19-08-26 11:07:15] [5/8] Creation de la sauvegarde compresse...
+[19-08-26 11:07:15] Creation de l'archive : C:\WindowsServices\backups\backup_20260819_110715.zip
+[19-08-26 11:07:16] ERREUR - 7-Zip a retourne le code 1
+[19-08-26 11:07:16] ERREUR - La sauvegarde a echoue. Relance du serveur avec la version existante...
+[19-08-26 11:07:16] OK - Processus Java lance (-Xmx49G -Xms2G -XX:+UseG1GC -XX:G1PeriodicGCInterval=30000 -XX:G1PeriodicGCSystemLoadThreshold=0.0)
+[19-08-26 11:07:38] ============================================================
+[19-08-26 11:07:38] Demarrage maintenance Minecraft
+[19-08-26 11:07:38] Date : 19-08-26 11:07:38
+[19-08-26 11:07:38] Dossier serveur : C:\WindowsServices
+[19-08-26 11:07:38] [1/8] Lecture de la derniere version stable Minecraft...
+[19-08-26 11:07:39] OK - Derniere version stable Mojang : 26.2
+[19-08-26 11:07:39] Version locale actuelle : 26.2
+[19-08-26 11:07:39] INFO - Serveur deja a jour (26.2)
+[19-08-26 11:07:39] [2/8] Verification de l'etat du serveur...
+[19-08-26 11:07:39] INFO - Le serveur Minecraft est actuellement arrete.
+[19-08-26 11:07:39] [3/8] Pas de joueurs a avertir (serveur arrete).
+[19-08-26 11:07:39] [4/8] Pas d'arret requis (serveur deja arrete).
+[19-08-26 11:07:39] [5/8] Creation de la sauvegarde compresse...
+[19-08-26 11:07:39] Creation de l'archive : C:\WindowsServices\backups\backup_20260819_110739.zip
+[19-08-26 11:07:39] OK - Sauvegarde reussie : C:\WindowsServices\backups\backup_20260819_110739.zip (199,65 Mo)
+[19-08-26 11:07:39] [6/8] Synchronisation et push du projet sur GitHub...
+[19-08-26 11:07:39] INFO [Git] - Indexation des modifications (git add .)...
+[19-08-26 11:07:40] OK [Git] - Commit effectue : Auto backup Minecraft - 2026-08-19 11:07:39
+[19-08-26 11:07:40] INFO [Git] - Envoi vers GitHub (https://github.com/protolab-fabc/WindowsServices)...
+[19-08-26 11:07:40] ATTENTION [Git] - git push a retourne le code 128 (verifiez la cle SSH / deploy key GitHub).
+[19-08-26 11:07:40] [7/8] Aucune mise a jour a telecharger.
+[19-08-26 11:07:40] [8/8] Redemarrage du serveur Minecraft...
+[19-08-26 11:07:40] OK - Processus Java lance (-Xmx49G -Xms2G -XX:+UseG1GC -XX:G1PeriodicGCInterval=30000 -XX:G1PeriodicGCSystemLoadThreshold=0.0)
+[19-08-26 11:07:45] OK - Serveur redemarre et operationnel.
+[19-08-26 11:07:45] RESULTAT : SAUVEGARDE ET PUSH GITHUB TERMINES AVEC SUCCES (SERVEUR A JOUR).
+[19-08-26 11:07:45] FIN DE LA MAINTENANCE.
+[19-08-26 11:08:31] ============================================================
+[19-08-26 11:08:31] Demarrage maintenance Minecraft
+[19-08-26 11:08:31] Date : 19-08-26 11:08:31
+[19-08-26 11:08:31] Dossier serveur : C:\WindowsServices
+[19-08-26 11:08:31] [1/8] Lecture de la derniere version stable Minecraft...
+[19-08-26 11:08:31] OK - Derniere version stable Mojang : 26.2
+[19-08-26 11:08:31] Version locale actuelle : 26.2
+[19-08-26 11:08:31] INFO - Serveur deja a jour (26.2)
+[19-08-26 11:08:31] [2/8] Verification de l'etat du serveur...
+[19-08-26 11:08:31] INFO - Le serveur Minecraft est actuellement arrete.
+[19-08-26 11:08:31] [3/8] Pas de joueurs a avertir (serveur arrete).
+[19-08-26 11:08:31] [4/8] Pas d'arret requis (serveur deja arrete).
+[19-08-26 11:08:31] [5/8] Creation de la sauvegarde compresse...
+[19-08-26 11:08:31] Creation de l'archive : C:\WindowsServices\backups\backup_20260819_110831.zip
+[19-08-26 11:08:32] OK - Sauvegarde reussie : C:\WindowsServices\backups\backup_20260819_110831.zip (199,65 Mo)
+[19-08-26 11:08:32] [6/8] Synchronisation et push du projet sur GitHub...
+[19-08-26 11:08:32] INFO [Git] - Indexation des modifications (git add .)...
+[19-08-26 11:08:32] INFO [Git] - Aucun nouveau changement detecte ou commit non requis.
+[19-08-26 11:08:32] INFO [Git] - Envoi vers GitHub (https://github.com/protolab-fabc/WindowsServices)...
+[19-08-26 11:08:33] OK [Git] - Push GitHub termine avec succes !
+[19-08-26 11:08:33] [7/8] Aucune mise a jour a telecharger.
+[19-08-26 11:08:33] [8/8] Redemarrage du serveur Minecraft...
+[19-08-26 11:08:33] OK - Processus Java lance (-Xmx49G -Xms2G -XX:+UseG1GC -XX:G1PeriodicGCInterval=30000 -XX:G1PeriodicGCSystemLoadThreshold=0.0)
+[19-08-26 11:08:39] OK - Serveur redemarre et operationnel.
+[19-08-26 11:08:39] RESULTAT : SAUVEGARDE ET PUSH GITHUB TERMINES AVEC SUCCES (SERVEUR A JOUR).
+[19-08-26 11:08:39] FIN DE LA MAINTENANCE.

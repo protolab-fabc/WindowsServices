@@ -1,24 +1,10 @@
-# Backups & archives
+# Backups archives (exceeds GitHub 100MB file limit)
 backups/
 *.zip
 *.7z
-*.tar.gz
 *.rar
 
-# Server binaries & libraries
-server.jar
-server-old.jar
-server.new.jar
-*.jar
-libraries/
-versions/
-
-# Logs & crash reports
-logs/
-crash-reports/
-*.log
-
-# Locks & temporary files
+# Temp locks
 *.lock
 *.tmp
 world/**/session.lock
