@@ -17,6 +17,7 @@ Dim versionFile
 Dim logFile
 Dim propsFile
 Dim sevenZip
+Dim gitExe
 Dim javaExe
 Dim javaArgs
 Dim rconHost
@@ -51,8 +52,9 @@ logFile = serverDir & "\update-backup.log"
 propsFile = serverDir & "\server.properties"
 lockFile = serverDir & "\update-backup.lock"
 
-' Chemin vers 7-Zip
+' Chemin vers 7-Zip et Git
 sevenZip = "C:\Program Files\7-Zip\7z.exe"
+gitExe = "C:\projets\MinGit\cmd\git.exe"
 
 ' Commande Java et memoire allouee
 javaExe = "C:\Program Files\Eclipse Adoptium\jdk-25.0.2.10-hotspot\bin\java.exe"
@@ -115,9 +117,9 @@ Sub Main()
     Dim rconResp
 
     ' ------------------------------------------------------------
-    ' [1/7] Verification de la derniere version stable Mojang
+    ' [1/8] Verification de la derniere version stable Mojang
     ' ------------------------------------------------------------
-    LogLine "[1/7] Lecture de la derniere version stable Minecraft..."
+    LogLine "[1/8] Lecture de la derniere version stable Minecraft..."
     latestVersion = GetLatestMinecraftVersion()
 
     If latestVersion = "" Then
@@ -152,9 +154,9 @@ Sub Main()
     End If
 
     ' ------------------------------------------------------------
-    ' [2/7] Verification de l'etat du serveur et RCON
+    ' [2/8] Verification de l'etat du serveur et RCON
     ' ------------------------------------------------------------
-    LogLine "[2/7] Verification de l'etat du serveur..."
+    LogLine "[2/8] Verification de l'etat du serveur..."
     isServerRunning = IsJavaServerProcessRunning()
 
     If isServerRunning Then
@@ -174,10 +176,10 @@ Sub Main()
     End If
 
     ' ------------------------------------------------------------
-    ' [3/7] & [4/7] Avertissement et arret propre du serveur
+    ' [3/8] & [4/8] Avertissement et arret propre du serveur
     ' ------------------------------------------------------------
     If isServerRunning Then
-        LogLine "[3/7] Avertissement des joueurs..."
+        LogLine "[3/8] Avertissement des joueurs..."
         If rconEnabled Then
             SendRcon "say [SERVEUR] Maintenance automatique dans 1 minute. Deconnexion imminente pour backup.", rconResp
             WScript.Sleep warning1WaitMs
@@ -186,7 +188,7 @@ Sub Main()
             WScript.Sleep warning2WaitMs
         End If
 
-        LogLine "[4/7] Sauvegarde et arret du serveur..."
+        LogLine "[4/8] Sauvegarde et arret du serveur..."
         If rconEnabled Then
             SendRcon "save-all flush", rconResp
             SendRcon "kick @a Maintenance automatique : backup et redemarrage du serveur.", rconResp
@@ -202,18 +204,17 @@ Sub Main()
         End If
         LogLine "OK - Serveur arrete proprement."
     Else
-        LogLine "[3/7] Pas de joueurs a avertir (serveur arrete)."
-        LogLine "[4/7] Pas d'arret requis (serveur deja arrete)."
+        LogLine "[3/8] Pas de joueurs a avertir (serveur arrete)."
+        LogLine "[4/8] Pas d'arret requis (serveur deja arrete)."
     End If
 
     ' ------------------------------------------------------------
-    ' [5/7] Creation de la sauvegarde compresse
+    ' [5/8] Creation de la sauvegarde compresse
     ' ------------------------------------------------------------
-    LogLine "[5/7] Creation de la sauvegarde compresse..."
+    LogLine "[5/8] Creation de la sauvegarde compresse..."
     If Not CreateBackup() Then
         LogLine "ERREUR - La sauvegarde a echoue. Relance du serveur avec la version existante..."
         StartServer
-        ShowDiagnostic
         Exit Sub
     End If
 
@@ -223,16 +224,21 @@ Sub Main()
     End If
 
     ' ------------------------------------------------------------
-    ' [6/7] Telechargement et installation de la mise a jour
+    ' [6/8] Synchronisation & Sauvegarde sur GitHub
+    ' ------------------------------------------------------------
+    LogLine "[6/8] Synchronisation et push du projet sur GitHub..."
+    SyncGitPush
+
+    ' ------------------------------------------------------------
+    ' [7/8] Telechargement et installation de la mise a jour
     ' ------------------------------------------------------------
     If needUpdate Then
-        LogLine "[6/7] Recuperation du server.jar officiel " & latestVersion & "..."
+        LogLine "[7/8] Recuperation du server.jar officiel " & latestVersion & "..."
         serverUrl = GetServerJarUrl(latestVersion)
 
         If serverUrl = "" Then
             LogLine "ERREUR - Impossible d'obtenir l'URL de telechargement pour " & latestVersion
             StartServer
-            ShowDiagnostic
             Exit Sub
         End If
 
@@ -240,7 +246,6 @@ Sub Main()
         If Not DownloadFile(serverUrl, tempJar, timeoutDownloadMs) Then
             LogLine "ERREUR - Telechargement echoue. Ancien server.jar conserve."
             StartServer
-            ShowDiagnostic
             Exit Sub
         End If
 
@@ -248,7 +253,6 @@ Sub Main()
             LogLine "ERREUR - Le fichier telecharge est invalide ou corrompu."
             SafeDelete tempJar
             StartServer
-            ShowDiagnostic
             Exit Sub
         End If
 
@@ -267,13 +271,13 @@ Sub Main()
         WriteTextFile versionFile, latestVersion
         LogLine "OK - Mise a jour appliquee avec succes : Minecraft " & latestVersion
     Else
-        LogLine "[6/7] Aucune mise a jour a telecharger."
+        LogLine "[7/8] Aucune mise a jour a telecharger."
     End If
 
     ' ------------------------------------------------------------
-    ' [7/7] Redemarrage du serveur
+    ' [8/8] Redemarrage du serveur
     ' ------------------------------------------------------------
-    LogLine "[7/7] Redemarrage du serveur Minecraft..."
+    LogLine "[8/8] Redemarrage du serveur Minecraft..."
     If Not StartServer() Then
         FailAndShow "Echec du lancement de Java."
         Exit Sub
@@ -286,9 +290,9 @@ Sub Main()
     End If
 
     If needUpdate Then
-        LogLine "RESULTAT : SAUVEGARDE ET MISE A JOUR TERMINEES AVEC SUCCES."
+        LogLine "RESULTAT : SAUVEGARDE, PUSH GITHUB ET MISE A JOUR TERMINEES AVEC SUCCES."
     Else
-        LogLine "RESULTAT : SAUVEGARDE TERMINEE AVEC SUCCES (SERVEUR A JOUR)."
+        LogLine "RESULTAT : SAUVEGARDE ET PUSH GITHUB TERMINES AVEC SUCCES (SERVEUR A JOUR)."
     End If
     LogLine "FIN DE LA MAINTENANCE."
 End Sub
@@ -706,6 +710,60 @@ Sub CleanOldBackups(ByVal targetFolder, ByVal keepCount)
     End If
     Set folder = Nothing
 End Sub
+
+' ==================== GIT PUSH AUTOMATIQUE ====================
+
+Function SyncGitPush()
+    Dim gitCmd, exitCode, commitMsg, dateStamp, effectiveGit
+
+    SyncGitPush = True
+    effectiveGit = gitExe
+    If Not objFSO.FileExists(effectiveGit) Then
+        If objFSO.FileExists("C:\flutter\bin\mingit\cmd\git.exe") Then
+            effectiveGit = "C:\flutter\bin\mingit\cmd\git.exe"
+        Else
+            effectiveGit = "git.exe"
+        End If
+    End If
+
+    dateStamp = Year(Now) & "-" & Right("0" & Month(Now), 2) & "-" & Right("0" & Day(Now), 2) & " " & _
+                Right("0" & Hour(Now), 2) & ":" & Right("0" & Minute(Now), 2) & ":" & Right("0" & Second(Now), 2)
+    commitMsg = "Auto backup Minecraft - " & dateStamp
+
+    On Error Resume Next
+
+    ' 1. Indexation des modifications
+    LogLine "INFO [Git] - Indexation des modifications (git add .)..."
+    gitCmd = QuoteForCmd(effectiveGit) & " -C " & QuoteForCmd(serverDir) & " add ."
+    exitCode = objShell.Run(gitCmd, 0, True)
+    If exitCode <> 0 Then
+        LogLine "ATTENTION [Git] - git add a retourne le code " & exitCode
+    End If
+
+    ' 2. Commit local
+    gitCmd = QuoteForCmd(effectiveGit) & " -C " & QuoteForCmd(serverDir) & " commit -m " & QuoteForCmd(commitMsg)
+    exitCode = objShell.Run(gitCmd, 0, True)
+    If exitCode = 0 Then
+        LogLine "OK [Git] - Commit effectue : " & commitMsg
+    Else
+        LogLine "INFO [Git] - Aucun nouveau changement detecte ou commit non requis."
+    End If
+
+    ' 3. Push vers GitHub (main)
+    LogLine "INFO [Git] - Envoi vers GitHub (https://github.com/protolab-fabc/WindowsServices)..."
+    gitCmd = QuoteForCmd(effectiveGit) & " -C " & QuoteForCmd(serverDir) & " push origin main"
+    exitCode = objShell.Run(gitCmd, 0, True)
+
+    If exitCode = 0 Then
+        LogLine "OK [Git] - Push GitHub termine avec succes !"
+        SyncGitPush = True
+    Else
+        LogLine "ATTENTION [Git] - git push a retourne le code " & exitCode & " (verifiez la cle SSH / deploy key GitHub)."
+        SyncGitPush = False
+    End If
+
+    On Error GoTo 0
+End Function
 
 ' ==================== MINECRAFT / MOJANG API ====================
 

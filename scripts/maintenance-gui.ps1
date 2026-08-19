@@ -145,13 +145,14 @@ $timer.Add_Tick({
             $latestStep = "Initialisation..."
             $pct = 5
             foreach ($l in $currentSessionLines) {
-                if ($l -match "\[1/7\]") { $latestStep = "[1/7] Vérification dernière version Mojang"; $pct = 15 }
-                elseif ($l -match "\[2/7\]") { $latestStep = "[2/7] Vérification état serveur"; $pct = 30 }
-                elseif ($l -match "\[3/7\]") { $latestStep = "[3/7] Avertissement des joueurs"; $pct = 45 }
-                elseif ($l -match "\[4/7\]") { $latestStep = "[4/7] Sauvegarde Minecraft & Arrêt propre"; $pct = 60 }
-                elseif ($l -match "\[5/7\]") { $latestStep = "[5/7] Compression sauvegarde 7-Zip"; $pct = 75 }
-                elseif ($l -match "\[6/7\]") { $latestStep = "[6/7] Téléchargement & Mise à jour JAR"; $pct = 88 }
-                elseif ($l -match "\[7/7\]") { $latestStep = "[7/7] Redémarrage du serveur"; $pct = 95 }
+                if ($l -match "\[1/[78]\]") { $latestStep = "[1/8] Vérification dernière version Mojang"; $pct = 12 }
+                elseif ($l -match "\[2/[78]\]") { $latestStep = "[2/8] Vérification état serveur"; $pct = 25 }
+                elseif ($l -match "\[3/[78]\]") { $latestStep = "[3/8] Avertissement des joueurs"; $pct = 38 }
+                elseif ($l -match "\[4/[78]\]") { $latestStep = "[4/8] Sauvegarde Minecraft & Arrêt propre"; $pct = 50 }
+                elseif ($l -match "\[5/[78]\]") { $latestStep = "[5/8] Compression sauvegarde 7-Zip"; $pct = 62 }
+                elseif ($l -match "\[6/8\]") { $latestStep = "[6/8] Sauvegarde & Push GitHub"; $pct = 75 }
+                elseif ($l -match "\[7/8\]" -or $l -match "\[6/7\]") { $latestStep = "[7/8] Téléchargement & Mise à jour JAR"; $pct = 87 }
+                elseif ($l -match "\[8/8\]" -or $l -match "\[7/7\]") { $latestStep = "[8/8] Redémarrage du serveur"; $pct = 95 }
                 elseif ($l -match "RESULTAT :" -or $l -match "FIN DE LA MAINTENANCE" -or $l -match "ERREUR CRITIQUE") { 
                     $pct = 100 
                     if ($l -match "ERREUR") {
