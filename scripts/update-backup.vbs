@@ -716,55 +716,27 @@ End Sub
 ' ==================== GIT PUSH AUTOMATIQUE ====================
 
 Function SyncGitPush()
-    Dim gitCmd, exitCode, commitMsg, dateStamp, effectiveGit
+    Dim psScript, cmd, exitCode
 
     SyncGitPush = True
-    effectiveGit = gitExe
-    If Not objFSO.FileExists(effectiveGit) Then
-        If objFSO.FileExists("C:\flutter\bin\mingit\cmd\git.exe") Then
-            effectiveGit = "C:\flutter\bin\mingit\cmd\git.exe"
+    psScript = serverDir & "\scripts\sync_github_backups.ps1"
+
+    If objFSO.FileExists(psScript) Then
+        LogLine "INFO [Git] - Execution de la synchronisation et rotation des backups sur GitHub (Max 2)..."
+        cmd = "powershell.exe -NoProfile -ExecutionPolicy Bypass -File " & QuoteForCmd(psScript) & " -MaxBackups 2 -ServerDir " & QuoteForCmd(serverDir)
+        exitCode = objShell.Run(cmd, 0, True)
+
+        If exitCode = 0 Then
+            LogLine "OK [Git] - Backup et rotation GitHub effectues avec succes (2 sauvegardes conservees) !"
+            SyncGitPush = True
         Else
-            effectiveGit = "git.exe"
+            LogLine "ATTENTION [Git] - sync_github_backups.ps1 a termine avec le code " & exitCode
+            SyncGitPush = False
         End If
-    End If
-
-    dateStamp = Year(Now) & "-" & Right("0" & Month(Now), 2) & "-" & Right("0" & Day(Now), 2) & " " & _
-                Right("0" & Hour(Now), 2) & ":" & Right("0" & Minute(Now), 2) & ":" & Right("0" & Second(Now), 2)
-    commitMsg = "Auto backup Minecraft - " & dateStamp
-
-    On Error Resume Next
-
-    ' 1. Indexation des modifications
-    LogLine "INFO [Git] - Indexation des modifications (git add .)..."
-    gitCmd = QuoteForCmd(effectiveGit) & " -C " & QuoteForCmd(serverDir) & " add ."
-    exitCode = objShell.Run(gitCmd, 0, True)
-    If exitCode <> 0 Then
-        LogLine "ATTENTION [Git] - git add a retourne le code " & exitCode
-    End If
-
-    ' 2. Commit local
-    gitCmd = QuoteForCmd(effectiveGit) & " -C " & QuoteForCmd(serverDir) & " commit -m " & QuoteForCmd(commitMsg)
-    exitCode = objShell.Run(gitCmd, 0, True)
-    If exitCode = 0 Then
-        LogLine "OK [Git] - Commit effectue : " & commitMsg
     Else
-        LogLine "INFO [Git] - Aucun nouveau changement detecte ou commit non requis."
-    End If
-
-    ' 3. Push vers GitHub (main)
-    LogLine "INFO [Git] - Envoi vers GitHub (https://github.com/protolab-fabc/WindowsServices)..."
-    gitCmd = QuoteForCmd(effectiveGit) & " -C " & QuoteForCmd(serverDir) & " push origin main"
-    exitCode = objShell.Run(gitCmd, 0, True)
-
-    If exitCode = 0 Then
-        LogLine "OK [Git] - Push GitHub termine avec succes !"
-        SyncGitPush = True
-    Else
-        LogLine "ATTENTION [Git] - git push a retourne le code " & exitCode & " (verifiez la cle SSH / deploy key GitHub)."
+        LogLine "ATTENTION [Git] - Script introuvable : " & psScript
         SyncGitPush = False
     End If
-
-    On Error GoTo 0
 End Function
 
 ' ==================== MINECRAFT / MOJANG API ====================
