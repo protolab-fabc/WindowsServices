@@ -667,15 +667,17 @@ Function CreateBackup()
         backupInputs = backupInputs & " " & QuoteForCmd(endDir)
     End If
 
-    commandText = QuoteForCmd(sevenZip) & " a -tzip -mx=5 -bso0 -bsp0 " & QuoteForCmd(backupFile) & " " & backupInputs
+    commandText = QuoteForCmd(sevenZip) & " a -tzip -mx=5 -ssw -bso0 -bsp0 " & QuoteForCmd("-xr!*.lock") & " " & QuoteForCmd(backupFile) & " " & backupInputs
 
     LogLine "Creation de l'archive : " & backupFile
     exitCode = objShell.Run(commandText, 0, True)
 
-    If exitCode <> 0 Then
+    If exitCode > 1 Then
         LogLine "ERREUR - 7-Zip a retourne le code " & exitCode
         CreateBackup = False
         Exit Function
+    ElseIf exitCode = 1 Then
+        LogLine "INFO - 7-Zip a termine avec des avertissements mineurs (code 1)."
     End If
 
     If Not objFSO.FileExists(backupFile) Then
