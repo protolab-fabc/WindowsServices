@@ -676,3 +676,37 @@
 [30-08-26 01:01:11] OK - Sauvegarde reussie : C:\WindowsServices\backups\backup_20260830_010109.zip (199,63 Mo)
 [30-08-26 01:01:11] [6/8] Synchronisation et push du projet sur GitHub...
 [30-08-26 01:01:11] INFO [Git] - Execution de la synchronisation et rotation des backups sur GitHub (Max 2)...
+[30-08-26 01:01:22] OK [Git] - Backup et rotation GitHub effectues avec succes (2 sauvegardes conservees) !
+[30-08-26 01:01:22] [7/8] Aucune mise a jour a telecharger.
+[30-08-26 01:01:22] [8/8] Redemarrage du serveur Minecraft...
+[30-08-26 01:01:22] OK - Processus Java lance (-Xmx49G -Xms2G -XX:+UseG1GC -XX:G1PeriodicGCInterval=30000 -XX:G1PeriodicGCSystemLoadThreshold=0.0)
+[30-08-26 01:01:38] OK - Serveur redemarre et operationnel.
+[30-08-26 01:01:38] RESULTAT : SAUVEGARDE ET PUSH GITHUB TERMINES AVEC SUCCES (SERVEUR A JOUR).
+[30-08-26 01:01:38] FIN DE LA MAINTENANCE.
+[31-08-26 01:00:01] ============================================================
+[31-08-26 01:00:01] Demarrage maintenance Minecraft
+[31-08-26 01:00:01] Date : 31-08-26 01:00:01
+[31-08-26 01:00:01] Dossier serveur : C:\WindowsServices
+[31-08-26 01:00:01] [1/8] Lecture de la derniere version stable Minecraft...
+[31-08-26 01:00:12] HTTP erreur : L’adresse ou le nom de serveur n’a pas pu être résolu
+
+[31-08-26 01:00:12] ERREUR CRITIQUE - Impossible de recuperer la derniere version stable depuis Mojang.
+[01-09-26 01:00:01] ============================================================
+[01-09-26 01:00:01] Demarrage maintenance Minecraft
+[01-09-26 01:00:01] Date : 01-09-26 01:00:01
+[01-09-26 01:00:01] Dossier serveur : C:\WindowsServices
+[01-09-26 01:00:01] [1/8] Lecture de la derniere version stable Minecraft...
+[01-09-26 01:00:01] OK - Derniere version stable Mojang : 26.2
+[01-09-26 01:00:01] Version locale actuelle : 26.2
+[01-09-26 01:00:01] INFO - Serveur deja a jour (26.2)
+[01-09-26 01:00:01] [2/8] Verification de l'etat du serveur...
+[01-09-26 01:00:01] INFO - Le serveur Minecraft est actuellement en cours d'execution.
+[01-09-26 01:00:02] OK - RCON operationnel. Joueurs : ï»¿There are 0 of a max of 100 players online:
+[01-09-26 01:00:02] [3/8] Avertissement des joueurs...
+[01-09-26 01:01:04] [4/8] Sauvegarde et arret du serveur...
+[01-09-26 01:01:07] OK - Serveur arrete proprement.
+[01-09-26 01:01:07] [5/8] Creation de la sauvegarde compresse...
+[01-09-26 01:01:07] Creation de l'archive : C:\WindowsServices\backups\backup_20260901_010107.zip
+[01-09-26 01:01:09] OK - Sauvegarde reussie : C:\WindowsServices\backups\backup_20260901_010107.zip (199,64 Mo)
+[01-09-26 01:01:09] [6/8] Synchronisation et push du projet sur GitHub...
+[01-09-26 01:01:09] INFO [Git] - Execution de la synchronisation et rotation des backups sur GitHub (Max 2)...
