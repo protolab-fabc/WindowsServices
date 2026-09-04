@@ -1,34 +1,591 @@
+[00:34:16] [ServerMain/WARN]: Failed to locate performance object for Process in the registry. Performance counters may be corrupt. Pdh call failed with error code 0xC0000BB8
+[00:34:16] [ServerMain/INFO]: Disabling further attempts to query Process.
+[00:34:24] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[00:34:25] [ServerMain/INFO]: Loaded 1585 recipes
+[00:34:25] [ServerMain/INFO]: Loaded 1688 advancements
+[00:34:25] [Server thread/INFO]: Starting minecraft server version 26.2
+[00:34:25] [Server thread/INFO]: Loading properties
+[00:34:25] [Server thread/INFO]: Default game type: SURVIVAL
+[00:34:25] [Server thread/INFO]: Generating keypair
+[00:34:25] [Server thread/INFO]: Starting Minecraft server on *:25565
+[00:34:25] [Server thread/INFO]: Preparing level "world"
+[00:34:25] [Server thread/INFO]: Loading 697 persistent chunks...
+[00:34:25] [Server thread/INFO]: Preparing spawn area: 1%
+[00:34:26] [Server thread/INFO]: Preparing spawn area: 1%
+[00:34:26] [Server thread/INFO]: Preparing spawn area: 1%
+[00:34:27] [Server thread/INFO]: Preparing spawn area: 1%
+[00:34:27] [Server thread/INFO]: Preparing spawn area: 1%
+[00:34:28] [Server thread/INFO]: Preparing spawn area: 1%
+[00:34:28] [Server thread/INFO]: Preparing spawn area: 1%
+[00:34:29] [Server thread/INFO]: Preparing spawn area: 1%
+[00:34:29] [Server thread/INFO]: Preparing spawn area: 1%
+[00:34:30] [Server thread/INFO]: Preparing spawn area: 3%
+[00:34:30] [Server thread/INFO]: Preparing spawn area: 3%
+[00:34:31] [Server thread/INFO]: Preparing spawn area: 3%
+[00:34:31] [Server thread/INFO]: Preparing spawn area: 3%
+[00:34:32] [Server thread/INFO]: Preparing spawn area: 55%
+[00:34:32] [Server thread/INFO]: Preparing spawn area: 62%
+[00:34:33] [Server thread/INFO]: Preparing spawn area: 75%
+[00:34:33] [Server thread/INFO]: Preparing spawn area: 80%
+[00:34:34] [Server thread/INFO]: Preparing spawn area: 80%
+[00:34:34] [Server thread/INFO]: Time elapsed: 8682 ms
+[00:34:34] [Server thread/INFO]: Done (8.955s)! For help, type "help"
+[00:34:34] [Server thread/INFO]: Starting remote control listener
+[00:34:34] [Server thread/INFO]: Thread RCON Listener started
+[00:34:34] [Server thread/INFO]: RCON running on 0.0.0.0:25575
+[00:34:34] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[00:34:34] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:35] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/hub:lobby
+[00:34:35] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[00:34:35] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[00:34:35] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[00:34:35] [Server thread/INFO]: ThreadedAnvilChunkStorage (lobby): All chunks are saved
+[00:34:35] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[00:34:35] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[00:34:35] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[00:34:35] [Server thread/WARN]: [net.minecraft.commands.arguments.blocks.BlockInput] Serialization errors:
+: Failed to decode value '{color:"gold",has_glowing_text:1b,messages:['{"text":"✦ HUB ✦","bold":true,"color":"gold"}','{"text":"Retour au Hub","color":"yellow"}','{"text":"Peak Island","color":"gray"}','{"text":"✦ ✦ ✦","color":"gold"}']}' from field 'front_text': Unknown element name:gold
+[00:34:36] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:36] [RCON Client /127.0.0.1 #3/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:36] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:36] [RCON Client /127.0.0.1 #4/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:37] [RCON Client /127.0.0.1 #2/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:37] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:38] [RCON Client /127.0.0.1 #5/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:38] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:40] [RCON Client /127.0.0.1 #6/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:40] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:41] [RCON Client /127.0.0.1 #7/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:41] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:41] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:41] [RCON Client /127.0.0.1 #9/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:41] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Successfully filled 3060 block(s)]
+[00:34:42] [RCON Client /127.0.0.1 #10/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Successfully filled 2250 block(s)]
+[00:34:42] [RCON Client /127.0.0.1 #11/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Successfully filled 240 block(s)]
+[00:34:42] [RCON Client /127.0.0.1 #12/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Successfully filled 182 block(s)]
+[00:34:42] [RCON Client /127.0.0.1 #13/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Successfully filled 99 block(s)]
+[00:34:42] [RCON Client /127.0.0.1 #14/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Successfully filled 36 block(s)]
+[00:34:42] [RCON Client /127.0.0.1 #15/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -128, 71, -208]
+[00:34:42] [RCON Client /127.0.0.1 #16/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -129, 71, -208]
+[00:34:42] [RCON Client /127.0.0.1 #17/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -127, 71, -208]
+[00:34:42] [RCON Client /127.0.0.1 #18/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -128, 71, -209]
+[00:34:42] [RCON Client /127.0.0.1 #19/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -128, 71, -207]
+[00:34:42] [RCON Client /127.0.0.1 #20/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -130, 71, -200]
+[00:34:42] [RCON Client /127.0.0.1 #21/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -129, 71, -200]
+[00:34:42] [RCON Client /127.0.0.1 #22/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -128, 71, -200]
+[00:34:42] [RCON Client /127.0.0.1 #23/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -127, 71, -200]
+[00:34:42] [RCON Client /127.0.0.1 #24/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -126, 71, -200]
+[00:34:42] [RCON Client /127.0.0.1 #25/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [RCON Client /127.0.0.1 #26/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [RCON Client /127.0.0.1 #27/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [RCON Client /127.0.0.1 #28/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [RCON Client /127.0.0.1 #29/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [RCON Client /127.0.0.1 #30/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [RCON Client /127.0.0.1 #31/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [RCON Client /127.0.0.1 #32/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Successfully filled 12 block(s)]
+[00:34:42] [RCON Client /127.0.0.1 #33/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -130, 77, -200]
+[00:34:42] [RCON Client /127.0.0.1 #34/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -129, 77, -200]
+[00:34:42] [RCON Client /127.0.0.1 #35/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -128, 77, -200]
+[00:34:42] [RCON Client /127.0.0.1 #36/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -127, 77, -200]
+[00:34:42] [RCON Client /127.0.0.1 #37/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -126, 77, -200]
+[00:34:42] [RCON Client /127.0.0.1 #38/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -131, 72, -200]
+[00:34:42] [RCON Client /127.0.0.1 #39/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Successfully filled 3 block(s)]
+[00:34:42] [RCON Client /127.0.0.1 #40/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -131, 76, -200]
+[00:34:42] [RCON Client /127.0.0.1 #41/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -125, 72, -200]
+[00:34:42] [RCON Client /127.0.0.1 #42/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Successfully filled 3 block(s)]
+[00:34:42] [RCON Client /127.0.0.1 #43/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -125, 76, -200]
+[00:34:42] [RCON Client /127.0.0.1 #44/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [RCON Client /127.0.0.1 #45/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -131, 75, -199]
+[00:34:42] [RCON Client /127.0.0.1 #46/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [RCON Client /127.0.0.1 #47/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -125, 75, -199]
+[00:34:42] [RCON Client /127.0.0.1 #48/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/WARN]: [net.minecraft.commands.arguments.blocks.BlockInput] Serialization errors:
+: Failed to decode value '{color:"gold",has_glowing_text:1b,messages:['{"text":"✦ HUB ✦","bold":true,"color":"gold"}','{"text":"Retour au Hub","color":"yellow"}','{"text":"Peak Island","color":"gray"}','{"text":"✦ ✦ ✦","color":"gold"}']}' from field 'front_text': Unknown element name:gold
+[00:34:42] [RCON Client /127.0.0.1 #49/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Successfully filled 13 block(s)]
+[00:34:42] [RCON Client /127.0.0.1 #50/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Successfully filled 13 block(s)]
+[00:34:42] [RCON Client /127.0.0.1 #51/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Successfully filled 13 block(s)]
+[00:34:42] [RCON Client /127.0.0.1 #52/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -135, 72, -213]
+[00:34:42] [RCON Client /127.0.0.1 #53/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -135, 73, -213]
+[00:34:42] [RCON Client /127.0.0.1 #54/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -121, 72, -213]
+[00:34:42] [RCON Client /127.0.0.1 #55/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -121, 73, -213]
+[00:34:42] [RCON Client /127.0.0.1 #56/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -135, 72, -198]
+[00:34:42] [RCON Client /127.0.0.1 #57/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -135, 73, -198]
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [RCON Client /127.0.0.1 #58/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -121, 72, -198]
+[00:34:42] [RCON Client /127.0.0.1 #59/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -121, 73, -198]
+[00:34:42] [RCON Client /127.0.0.1 #60/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -133, 72, -212]
+[00:34:42] [RCON Client /127.0.0.1 #61/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -133, 73, -212]
+[00:34:42] [RCON Client /127.0.0.1 #62/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -123, 72, -212]
+[00:34:42] [RCON Client /127.0.0.1 #63/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -123, 73, -212]
+[00:34:42] [RCON Client /127.0.0.1 #64/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -133, 72, -203]
+[00:34:42] [RCON Client /127.0.0.1 #65/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -133, 73, -203]
+[00:34:42] [RCON Client /127.0.0.1 #66/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -123, 72, -203]
+[00:34:42] [RCON Client /127.0.0.1 #67/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -123, 73, -203]
+[00:34:42] [RCON Client /127.0.0.1 #68/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Successfully filled 5 block(s)]
+[00:34:42] [RCON Client /127.0.0.1 #69/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Successfully filled 55 block(s)]
+[00:34:42] [RCON Client /127.0.0.1 #70/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [RCON Client /127.0.0.1 #71/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -131, 72, -213]
+[00:34:42] [RCON Client /127.0.0.1 #72/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [RCON Client /127.0.0.1 #73/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -125, 72, -213]
+[00:34:42] [RCON Client /127.0.0.1 #74/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Successfully filled 5 block(s)]
+[00:34:42] [RCON Client /127.0.0.1 #75/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Successfully filled 50 block(s)]
+[00:34:42] [RCON Client /127.0.0.1 #76/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -131, 70, -214]
+[00:34:42] [RCON Client /127.0.0.1 #77/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -131, 71, -214]
+[00:34:42] [RCON Client /127.0.0.1 #78/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -125, 70, -214]
+[00:34:42] [RCON Client /127.0.0.1 #79/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -125, 71, -214]
+[00:34:42] [RCON Client /127.0.0.1 #80/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Successfully filled 5 block(s)]
+[00:34:42] [RCON Client /127.0.0.1 #81/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Successfully filled 45 block(s)]
+[00:34:42] [RCON Client /127.0.0.1 #82/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:42] [Server thread/INFO]: [Rcon: Changed the block at -131, 69, -215]
+[00:34:42] [RCON Client /127.0.0.1 #83/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -131, 70, -215]
+[00:34:43] [RCON Client /127.0.0.1 #84/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -125, 69, -215]
+[00:34:43] [RCON Client /127.0.0.1 #85/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -125, 70, -215]
+[00:34:43] [RCON Client /127.0.0.1 #86/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Successfully filled 5 block(s)]
+[00:34:43] [RCON Client /127.0.0.1 #87/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Successfully filled 40 block(s)]
+[00:34:43] [RCON Client /127.0.0.1 #88/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -131, 68, -216]
+[00:34:43] [RCON Client /127.0.0.1 #89/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -131, 69, -216]
+[00:34:43] [RCON Client /127.0.0.1 #90/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -125, 68, -216]
+[00:34:43] [RCON Client /127.0.0.1 #91/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -125, 69, -216]
+[00:34:43] [RCON Client /127.0.0.1 #92/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Successfully filled 5 block(s)]
+[00:34:43] [RCON Client /127.0.0.1 #93/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Successfully filled 35 block(s)]
+[00:34:43] [RCON Client /127.0.0.1 #94/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -131, 67, -217]
+[00:34:43] [RCON Client /127.0.0.1 #95/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -131, 68, -217]
+[00:34:43] [RCON Client /127.0.0.1 #96/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -125, 67, -217]
+[00:34:43] [RCON Client /127.0.0.1 #97/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -125, 68, -217]
+[00:34:43] [RCON Client /127.0.0.1 #98/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Successfully filled 5 block(s)]
+[00:34:43] [RCON Client /127.0.0.1 #99/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Successfully filled 30 block(s)]
+[00:34:43] [RCON Client /127.0.0.1 #100/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [RCON Client /127.0.0.1 #8/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -131, 66, -218]
+[00:34:43] [RCON Client /127.0.0.1 #101/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -131, 67, -218]
+[00:34:43] [RCON Client /127.0.0.1 #103/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -125, 66, -218]
+[00:34:43] [RCON Client /127.0.0.1 #104/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -125, 67, -218]
+[00:34:43] [RCON Client /127.0.0.1 #105/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Successfully filled 5 block(s)]
+[00:34:43] [RCON Client /127.0.0.1 #106/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Successfully filled 25 block(s)]
+[00:34:43] [RCON Client /127.0.0.1 #107/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -131, 65, -219]
+[00:34:43] [RCON Client /127.0.0.1 #108/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -131, 66, -219]
+[00:34:43] [RCON Client /127.0.0.1 #109/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -125, 65, -219]
+[00:34:43] [RCON Client /127.0.0.1 #110/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -125, 66, -219]
+[00:34:43] [RCON Client /127.0.0.1 #111/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Successfully filled 5 block(s)]
+[00:34:43] [RCON Client /127.0.0.1 #112/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Successfully filled 20 block(s)]
+[00:34:43] [RCON Client /127.0.0.1 #113/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -131, 64, -220]
+[00:34:43] [RCON Client /127.0.0.1 #114/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -131, 65, -220]
+[00:34:43] [RCON Client /127.0.0.1 #115/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -125, 64, -220]
+[00:34:43] [RCON Client /127.0.0.1 #116/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -125, 65, -220]
+[00:34:43] [RCON Client /127.0.0.1 #117/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Successfully filled 5 block(s)]
+[00:34:43] [RCON Client /127.0.0.1 #118/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Successfully filled 15 block(s)]
+[00:34:43] [RCON Client /127.0.0.1 #119/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -131, 63, -221]
+[00:34:43] [RCON Client /127.0.0.1 #120/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -131, 64, -221]
+[00:34:43] [RCON Client /127.0.0.1 #121/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -125, 63, -221]
+[00:34:43] [RCON Client /127.0.0.1 #122/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -125, 64, -221]
+[00:34:43] [RCON Client /127.0.0.1 #123/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Successfully filled 5 block(s)]
+[00:34:43] [RCON Client /127.0.0.1 #124/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Successfully filled 10 block(s)]
+[00:34:43] [RCON Client /127.0.0.1 #125/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -131, 62, -222]
+[00:34:43] [RCON Client /127.0.0.1 #126/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -131, 63, -222]
+[00:34:43] [RCON Client /127.0.0.1 #127/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -125, 62, -222]
+[00:34:43] [RCON Client /127.0.0.1 #128/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -125, 63, -222]
+[00:34:43] [RCON Client /127.0.0.1 #129/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -131, 69, -217]
+[00:34:43] [RCON Client /127.0.0.1 #130/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -131, 70, -217]
+[00:34:43] [RCON Client /127.0.0.1 #131/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -125, 69, -217]
+[00:34:43] [RCON Client /127.0.0.1 #132/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -125, 70, -217]
+[00:34:43] [RCON Client /127.0.0.1 #133/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -131, 64, -222]
+[00:34:43] [RCON Client /127.0.0.1 #134/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -131, 65, -222]
+[00:34:43] [RCON Client /127.0.0.1 #135/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -125, 64, -222]
+[00:34:43] [RCON Client /127.0.0.1 #136/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Changed the block at -125, 65, -222]
+[00:34:43] [RCON Client /127.0.0.1 #137/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Successfully filled 21 block(s)]
+[00:34:43] [RCON Client /127.0.0.1 #138/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Successfully filled 15 block(s)]
+[00:34:43] [RCON Client /127.0.0.1 #139/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Running function hub:setup_holograms]
+[00:34:43] [RCON Client /127.0.0.1 #140/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [RCON Client /127.0.0.1 #141/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:43] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:43] [Server thread/INFO]: [Rcon: Gamerule command_block_output is now set to: false]
+[00:34:43] [RCON Client /127.0.0.1 #142/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:44] [RCON Client /127.0.0.1 #102/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:44] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:46] [RCON Client /127.0.0.1 #143/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:46] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:47] [RCON Client /127.0.0.1 #144/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:47] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:48] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:48] [RCON Client /127.0.0.1 #146/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:49] [RCON Client /127.0.0.1 #145/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:49] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:50] [RCON Client /127.0.0.1 #147/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:50] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:52] [RCON Client /127.0.0.1 #148/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:52] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:53] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:53] [Server thread/INFO]: [Rcon: Running function hub:setup_holograms]
+[00:34:53] [RCON Client /127.0.0.1 #150/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:53] [RCON Client /127.0.0.1 #149/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:53] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:55] [RCON Client /127.0.0.1 #151/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:55] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:56] [RCON Client /127.0.0.1 #152/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:56] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:58] [RCON Client /127.0.0.1 #153/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:34:58] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:59] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:34:59] [RCON Client /127.0.0.1 #155/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:00] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:00] [RCON Client /127.0.0.1 #154/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:01] [RCON Client /127.0.0.1 #156/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:01] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:03] [RCON Client /127.0.0.1 #157/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:03] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:04] [RCON Client /127.0.0.1 #158/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:04] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:06] [RCON Client /127.0.0.1 #159/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:06] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:07] [RCON Client /127.0.0.1 #160/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:07] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:09] [RCON Client /127.0.0.1 #161/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:09] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:09] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:09] [RCON Client /127.0.0.1 #163/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:10] [RCON Client /127.0.0.1 #162/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:10] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:12] [RCON Client /127.0.0.1 #164/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:12] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:13] [RCON Client /127.0.0.1 #165/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:13] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:15] [RCON Client /127.0.0.1 #166/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:15] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:16] [RCON Client /127.0.0.1 #167/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:16] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:18] [RCON Client /127.0.0.1 #168/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:18] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:19] [RCON Client /127.0.0.1 #169/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:19] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:21] [RCON Client /127.0.0.1 #170/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:21] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:22] [RCON Client /127.0.0.1 #171/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:22] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:24] [RCON Client /127.0.0.1 #172/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:24] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:25] [RCON Client /127.0.0.1 #173/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:25] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:27] [RCON Client /127.0.0.1 #174/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:27] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:28] [RCON Client /127.0.0.1 #175/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:28] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:30] [RCON Client /127.0.0.1 #176/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:30] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:32] [RCON Client /127.0.0.1 #177/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:32] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:33] [RCON Client /127.0.0.1 #178/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:33] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:35] [RCON Client /127.0.0.1 #179/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:35] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:35] [Server thread/INFO]: Server empty for 60 seconds, pausing
+[00:35:36] [RCON Client /127.0.0.1 #180/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:36] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:38] [RCON Client /127.0.0.1 #181/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:38] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:39] [RCON Client /127.0.0.1 #182/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:39] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:41] [RCON Client /127.0.0.1 #183/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:41] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:42] [RCON Client /127.0.0.1 #184/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:42] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:44] [RCON Client /127.0.0.1 #185/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:44] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:45] [RCON Client /127.0.0.1 #186/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:45] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:47] [RCON Client /127.0.0.1 #187/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:47] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:48] [RCON Client /127.0.0.1 #188/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:48] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:50] [RCON Client /127.0.0.1 #189/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:50] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:51] [RCON Client /127.0.0.1 #190/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:51] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:53] [RCON Client /127.0.0.1 #191/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:53] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:54] [RCON Client /127.0.0.1 #192/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:54] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:56] [RCON Client /127.0.0.1 #193/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:56] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:57] [RCON Client /127.0.0.1 #194/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:35:57] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:35:59] [RCON Client /127.0.0.1 #195/INFO]: Thread RCON Client /127.0.0.1 shutting down
 [01:00:02] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
-[01:00:02] [RCON Client /127.0.0.1 #3/INFO]: Thread RCON Client /127.0.0.1 shutting down
-[01:00:04] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
-[01:00:04] [Server thread/INFO]: [Not Secure] [Rcon] [SERVEUR] Maintenance automatique dans 1 minute. Deconnexion imminente pour backup.
-[01:00:04] [RCON Client /127.0.0.1 #4/INFO]: Thread RCON Client /127.0.0.1 shutting down
-[01:00:51] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
-[01:00:51] [Server thread/INFO]: [Not Secure] [Rcon] [SERVEUR] Backup et redemarrage dans 15 secondes.
-[01:00:51] [RCON Client /127.0.0.1 #5/INFO]: Thread RCON Client /127.0.0.1 shutting down
-[01:01:07] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
-[01:01:07] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[01:01:07] [Server thread/INFO]: ThreadedAnvilChunkStorage (lobby): All chunks are saved
-[01:01:07] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[01:01:07] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[01:01:07] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[01:01:07] [Server thread/INFO]: [Rcon: Saved the game]
-[01:01:07] [RCON Client /127.0.0.1 #6/INFO]: Thread RCON Client /127.0.0.1 shutting down
-[01:01:08] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
-[01:01:08] [RCON Client /127.0.0.1 #7/INFO]: Thread RCON Client /127.0.0.1 shutting down
-[01:01:09] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
-[01:01:09] [Server thread/INFO]: [Rcon: Stopping the server]
-[01:01:09] [RCON Client /127.0.0.1 #8/INFO]: Thread RCON Client /127.0.0.1 shutting down
-[01:01:09] [Server thread/INFO]: Stopping server
-[01:01:09] [Server thread/INFO]: Saving players
-[01:01:09] [Server thread/INFO]: Saving worlds
-[01:01:09] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[01:01:09] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/hub:lobby
-[01:01:09] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
-[01:01:09] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
-[01:01:09] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[01:01:09] [Server thread/INFO]: ThreadedAnvilChunkStorage (lobby): All chunks are saved
-[01:01:09] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[01:01:09] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[01:01:09] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[01:01:09] [Server thread/INFO]: Thread RCON Listener stopped
+[01:00:02] [RCON Client /127.0.0.1 #196/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[01:00:03] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[01:00:03] [Server thread/INFO]: [Not Secure] [Rcon] [SERVEUR] Maintenance automatique dans 1 minute. Deconnexion imminente pour backup.
+[01:00:03] [RCON Client /127.0.0.1 #197/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[01:00:49] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[01:00:49] [Server thread/INFO]: [Not Secure] [Rcon] [SERVEUR] Backup et redemarrage dans 15 secondes.
+[01:00:49] [RCON Client /127.0.0.1 #198/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[01:01:04] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[01:01:04] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[01:01:04] [Server thread/INFO]: ThreadedAnvilChunkStorage (lobby): All chunks are saved
+[01:01:04] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[01:01:04] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[01:01:04] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[01:01:04] [Server thread/INFO]: [Rcon: Saved the game]
+[01:01:04] [RCON Client /127.0.0.1 #199/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[01:01:05] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[01:01:05] [RCON Client /127.0.0.1 #200/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[01:01:05] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[01:01:05] [Server thread/INFO]: [Rcon: Stopping the server]
+[01:01:05] [RCON Client /127.0.0.1 #201/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[01:01:06] [Server thread/INFO]: Stopping server
+[01:01:06] [Server thread/INFO]: Saving players
+[01:01:06] [Server thread/INFO]: Saving worlds
+[01:01:06] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[01:01:06] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/hub:lobby
+[01:01:06] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[01:01:06] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[01:01:06] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[01:01:06] [Server thread/INFO]: ThreadedAnvilChunkStorage (lobby): All chunks are saved
+[01:01:06] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[01:01:06] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[01:01:06] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[01:01:07] [Server thread/INFO]: Thread RCON Listener stopped

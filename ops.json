@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "uuid": "35257e63-21fe-4ca8-bf58-495c5555d047",
+    "name": "Vibrions",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "api_key": "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",
+  "models": [
+    "openrouter/free",
+    "google/gemma-4-31b-it:free",
+    "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "minimax/minimax-m3:free",
+    "nvidia/nemotron-3-super-120b-a12b:free",
+    "meta-llama/llama-3.3-70b-instruct"
+  ],
+  "current_model": "minimax/minimax-m3:free",
+  "auto_switch": true,
+  "rpg_enabled": false,
+  "rpg_interval_minutes": 15,
+  "rpg_target": "random"
+}

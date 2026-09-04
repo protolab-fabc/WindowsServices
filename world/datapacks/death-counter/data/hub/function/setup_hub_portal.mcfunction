@@ -55,3 +55,29 @@ execute in hub:lobby run setblock 171 65 -188 nether_portal[axis=x]
 execute in hub:lobby run setblock 172 65 -188 nether_portal[axis=x]
 
 execute in hub:lobby run setblock 170 64 -187 oak_wall_sign[facing=south]{front_text:{messages:['{"text":"✦ SURVIE ✦","color":"green","bold":true}','{"text":"Overworld","color":"dark_green"}','{"text":"Entrez pour jouer","color":"gray"}','{"text":"--------","color":"dark_gray"}']}}
+
+# Emplacement 3 (Monde Survie - Spawn) : X=-128, Y=71..77, Z=-200 (axe X)
+execute in minecraft:overworld run setblock -130 71 -200 crying_obsidian
+execute in minecraft:overworld run setblock -129 71 -200 obsidian
+execute in minecraft:overworld run setblock -128 71 -200 obsidian
+execute in minecraft:overworld run setblock -127 71 -200 obsidian
+execute in minecraft:overworld run setblock -126 71 -200 crying_obsidian
+
+execute in minecraft:overworld run setblock -130 72 -200 obsidian
+execute in minecraft:overworld run setblock -130 73 -200 obsidian
+execute in minecraft:overworld run setblock -130 74 -200 obsidian
+execute in minecraft:overworld run setblock -130 75 -200 obsidian
+
+execute in minecraft:overworld run setblock -126 72 -200 obsidian
+execute in minecraft:overworld run setblock -126 73 -200 obsidian
+execute in minecraft:overworld run setblock -126 74 -200 obsidian
+execute in minecraft:overworld run setblock -126 75 -200 obsidian
+
+execute in minecraft:overworld run setblock -130 76 -200 crying_obsidian
+execute in minecraft:overworld run setblock -129 76 -200 obsidian
+execute in minecraft:overworld run setblock -128 76 -200 obsidian
+execute in minecraft:overworld run setblock -127 76 -200 obsidian
+execute in minecraft:overworld run setblock -126 76 -200 crying_obsidian
+
+execute in minecraft:overworld run fill -129 72 -200 -127 75 -200 nether_portal[axis=x]
+execute in minecraft:overworld run setblock -130 73 -199 oak_wall_sign[facing=south]{front_text:{has_glowing_text:1b,color:"gold",messages:['{"text":"✦ HUB ✦","bold":true,"color":"gold"}','{"text":"Retour au Hub","color":"yellow"}','{"text":"Peak Island","color":"gray"}','{"text":"✦ ✦ ✦","color":"gold"}']}}

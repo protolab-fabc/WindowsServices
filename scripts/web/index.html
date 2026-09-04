@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOZOR // Console IA Minecraft</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="app-background">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+  </div>
+
+  <div class="app-layout">
+    <!-- TOP HEADER -->
+    <header class="app-header">
+      <div class="brand-section">
+        <div class="brand-avatar">
+          <span class="avatar-icon">⚡</span>
+          <div class="status-pulse-ring"></div>
+        </div>
+        <div class="brand-info">
+          <div class="brand-title-row">
+            <h1 class="brand-title">NOZOR <span>CORE</span></h1>
+            <span class="badge badge-version">v2.0 AUTONOMOUS</span>
+          </div>
+          <p class="brand-subtitle">Interface neuronale temps réel • Serveur Minecraft</p>
+        </div>
+      </div>
+
+      <div class="header-stats">
+        <div class="stat-pill">
+          <span class="stat-indicator" id="connection-indicator"></span>
+          <span class="stat-label">Connexion :</span>
+          <span class="stat-value" id="connection-status">En attente...</span>
+        </div>
+        <div class="stat-pill">
+          <span class="stat-label">Modèle :</span>
+          <span class="stat-value text-accent" id="model-name">OpenRouter / Free</span>
+        </div>
+        <div class="stat-pill">
+          <span class="stat-label">Requêtes :</span>
+          <span class="stat-value" id="stat-requests">0</span>
+        </div>
+        <div class="stat-pill">
+          <span class="stat-label">Actions RCON :</span>
+          <span class="stat-value text-emerald" id="stat-actions">0</span>
+        </div>
+        <div class="stat-pill">
+          <span class="stat-label">Events RPG :</span>
+          <span class="stat-value text-amber" id="stat-rpg">0</span>
+        </div>
+        <button class="icon-btn btn-cfg" id="btn-settings" title="Paramètres IA & Modèles">
+          <span class="icon">⚙️</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- MAIN BODY -->
+    <main class="main-container">
+      <!-- LEFT: FEED OF WHAT NOZOR SAYS & DOES -->
+      <section class="feed-section">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <h2 class="section-title">Ce que dit & fait Nozor</h2>
+            <span class="section-badge" id="live-indicator">LIVE STREAM</span>
+          </div>
+
+          <!-- FILTERS & CONTROLS -->
+          <div class="feed-controls">
+            <div class="filter-tabs">
+              <button class="filter-btn active" data-filter="all">Tous</button>
+              <button class="filter-btn" data-filter="rpg_event">⚔️ RPG</button>
+              <button class="filter-btn" data-filter="speech">🗣️ Paroles</button>
+              <button class="filter-btn" data-filter="thought">🧠 Pensées</button>
+              <button class="filter-btn" data-filter="action">⚙️ Commandes</button>
+            </div>
+            <div class="control-actions">
+              <button class="icon-btn" id="btn-sound" title="Activer/Désactiver son">
+                <span class="icon">🔔</span>
+              </button>
+              <button class="icon-btn" id="btn-autoscroll" title="Défilement automatique (Actif)">
+                <span class="icon">⬇️</span>
+              </button>
+              <button class="icon-btn" id="btn-clear" title="Effacer l'affichage">
+                <span class="icon">🗑️</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- EVENTS STREAM -->
+        <div class="events-scroll-container" id="events-feed">
+          <!-- WELCOME EVENT -->
+          <div class="event-card event-welcome" data-type="system">
+            <div class="event-header">
+              <div class="event-meta">
+                <span class="event-badge badge-system">SYSTEM</span>
+                <span class="event-time">Maintenant</span>
+              </div>
+            </div>
+            <div class="event-body">
+              <div class="speech-bubble speech-system">
+                <p>Bienvenue sur la console Nozor. Tous les messages en jeu ("<strong>dis nozor &lt;demande&gt;</strong>"), réflexions internes de l'IA, actions Minecraft RCON et réponses s'affichent ici en direct.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RIGHT: INTERACTIVE CONTROL & SERVER STATUS -->
+      <aside class="sidebar-section">
+        <!-- DIRECT MESSAGE PROMPT -->
+        <div class="panel-card panel-interact">
+          <div class="panel-header">
+            <h3 class="panel-title">Parler directement à Nozor</h3>
+            <span class="panel-tag">Console Web</span>
+          </div>
+
+          <div class="panel-body">
+            <div class="form-group">
+              <label for="player-select">Joueur cible :</label>
+              <div class="input-with-icon">
+                <span class="input-icon">👤</span>
+                <input type="text" id="player-target" value="Vibrions" placeholder="Nom du joueur">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="prompt-input">Instruction pour Nozor :</label>
+              <textarea id="prompt-input" rows="3" placeholder="Ex: Donne-moi une épée en diamant enchantée, ou quel temps fait-il ?"></textarea>
+            </div>
+
+            <button class="btn btn-primary" id="btn-send-instruction">
+              <span class="btn-text">Envoyer l'instruction</span>
+              <span class="btn-icon">⚡</span>
+            </button>
+
+            <!-- QUICK SUGGESTIONS -->
+            <div class="quick-prompts-wrap">
+              <span class="quick-label">Suggestions rapides :</span>
+              <div class="quick-chips">
+                <button class="chip" data-text="donne 5 diamants">💎 5 diamants</button>
+                <button class="chip" data-text="fais spawn un cheval blanc apprivoisé">🐎 Cheval blanc</button>
+                <button class="chip" data-text="mets le jour et beau temps">☀️ Beau temps</button>
+                <button class="chip" data-text="c'est quoi la difficulté du serveur ?">❓ Difficulté</button>
+                <button class="chip" data-text="fais spawn deux zombies devant moi">🧟 2 Zombies</button>
+                <button class="chip" data-text="raconte une blague minecraft">💬 Blague</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RPG GAME MASTER PANEL -->
+        <div class="panel-card panel-rpg">
+          <div class="panel-header">
+            <div class="rpg-title-wrap">
+              <span class="rpg-icon">⚔️</span>
+              <h3 class="panel-title">Game Master RPG</h3>
+            </div>
+            <span class="badge badge-rpg">DYNAMIQUE IA</span>
+          </div>
+
+          <div class="panel-body">
+            <p class="rpg-desc">Déclenche un événement immersif dans Minecraft avec titres géants, sons d'ambiance, boss et butins.</p>
+
+            <div class="rpg-actions-grid">
+              <button class="btn-rpg-action" data-rpg="meteorite" title="Chute d'un météore avec coffre stellaire et gardiens">
+                <span class="rpg-btn-icon">☄️</span>
+                <span class="rpg-btn-label">Météorite</span>
+              </button>
+              <button class="btn-rpg-action" data-rpg="invasion" title="Assaut d'une légion de squelettes et berserkers armés">
+                <span class="rpg-btn-icon">🧟</span>
+                <span class="rpg-btn-label">Invasion Horde</span>
+              </button>
+              <button class="btn-rpg-action" data-rpg="boss" title="Invocation du Seigneur Revenant Nozor avec armure Netherite">
+                <span class="rpg-btn-icon">☠️</span>
+                <span class="rpg-btn-label">Boss Spectral</span>
+              </button>
+              <button class="btn-rpg-action" data-rpg="blessing" title="Pluie d'étincelles avec force, vitesse et régénération">
+                <span class="rpg-btn-icon">✨</span>
+                <span class="rpg-btn-label">Bénédiction</span>
+              </button>
+              <button class="btn-rpg-action" data-rpg="blood_moon" title="Orage violent et créatures terrifiantes">
+                <span class="rpg-btn-icon">🌑</span>
+                <span class="rpg-btn-label">Lune de Sang</span>
+              </button>
+              <button class="btn-rpg-action" data-rpg="treasure" title="Coffre mystique en obsidienne gardé par un Évocateur">
+                <span class="rpg-btn-icon">💎</span>
+                <span class="rpg-btn-label">Trésor Maudit</span>
+              </button>
+            </div>
+
+            <button class="btn btn-rpg-ai" id="btn-rpg-ai-random">
+              <span class="btn-icon">🎲</span>
+              <span class="btn-text">Événement Aléatoire Créé par l'IA</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- SERVER STATUS & RECENT INFO -->
+        <div class="panel-card panel-status">
+          <div class="panel-header">
+            <h3 class="panel-title">État du système</h3>
+          </div>
+          <div class="panel-body">
+            <div class="status-grid">
+              <div class="status-item">
+                <span class="status-name">Joueurs en ligne :</span>
+                <span class="status-val text-cyan" id="online-players-val">Vibrions, AsHishon</span>
+              </div>
+              <div class="status-item">
+                <span class="status-name">Watcher Minecraft :</span>
+                <span class="status-val text-emerald" id="watcher-state">Actif (logs/latest.log)</span>
+              </div>
+              <div class="status-item">
+                <span class="status-name">Protocole RCON :</span>
+                <span class="status-val text-emerald" id="rcon-state">Port 25575 Connecté</span>
+              </div>
+              <div class="status-item">
+                <span class="status-name">Events RPG Auto :</span>
+                <span class="status-val text-amber" id="rpg-auto-state">Toutes les 15 min</span>
+              </div>
+              <div class="status-item">
+                <span class="status-name">File d'attente :</span>
+                <span class="status-val" id="queue-count">0 requêtes</span>
+              </div>
+              <div class="status-item">
+                <span class="status-name">Dernière activité :</span>
+                <span class="status-val text-muted" id="last-activity">À l'instant</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <!-- SETTINGS MODAL -->
+  <div class="modal-backdrop" id="modal-settings">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-icon">⚙️</span>
+          <h3>Configuration IA & Bascule de Modèle</h3>
+        </div>
+        <button class="icon-btn" id="btn-close-modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-desc">Gère la clé API OpenRouter et la chaîne de modèles avec bascule automatique dès que les crédits d'un modèle sont épuisés (Erreur 402) ou en cas de rate-limit (Erreur 429).</p>
+
+        <div class="form-group">
+          <label for="cfg-api-key">Clé API OpenRouter :</label>
+          <div class="input-with-icon">
+            <span class="input-icon">🔑</span>
+            <input type="password" id="cfg-api-key" placeholder="sk-or-v1-...">
+          </div>
+          <span class="input-help">Laisse vide pour conserver la clé actuelle enregistrée.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="cfg-current-model">Modèle Actif :</label>
+          <input type="text" id="cfg-current-model" placeholder="ex: openrouter/free">
+        </div>
+
+        <div class="form-group">
+          <label for="cfg-models-list">Liste de priorité des modèles (1 par ligne) :</label>
+          <textarea id="cfg-models-list" rows="5" placeholder="openrouter/free&#10;google/gemma-4-31b-it:free&#10;nvidia/nemotron-3-ultra-550b-a55b:free&#10;meta-llama/llama-3.3-70b-instruct"></textarea>
+          <span class="input-help">Dès qu'un modèle n'a plus de crédits, Nozor basculera automatiquement vers le suivant de cette liste sans couper la conversation.</span>
+        </div>
+
+        <div class="checkbox-row">
+          <label class="switch">
+            <input type="checkbox" id="cfg-auto-switch" checked>
+            <span class="slider"></span>
+          </label>
+          <span class="switch-label">Bascule automatique de modèle activée (Recommandé)</span>
+        </div>
+
+        <hr style="border: none; border-top: 1px solid var(--border-subtle); margin: 6px 0;">
+
+        <div class="form-group">
+          <label for="cfg-rpg-interval">Intervalle des Événements RPG Automatiques (minutes) :</label>
+          <input type="number" id="cfg-rpg-interval" min="1" max="120" value="15">
+        </div>
+
+        <div class="checkbox-row">
+          <label class="switch">
+            <input type="checkbox" id="cfg-rpg-enabled" checked>
+            <span class="slider"></span>
+          </label>
+          <span class="switch-label">Game Master RPG Automatique activé</span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="btn-cancel-config">Annuler</button>
+        <button class="btn btn-primary" id="btn-save-config">Enregistrer les paramètres 💾</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
