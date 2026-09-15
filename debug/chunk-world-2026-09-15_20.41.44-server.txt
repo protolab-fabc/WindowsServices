@@ -1,0 +1,138 @@
+---- Minecraft Chunk IO Error Report ----
+// Computers were a mistake
+
+Time: 2026-09-15 20:41:44
+Description: Chunk found in invalid location
+
+java.lang.IllegalStateException: Retrieved chunk position [-2, -7] does not match requested [-19, -19]
+	at net.minecraft.world.level.chunk.storage.ChunkIOErrorReporter.createMisplacedChunkReport(ChunkIOErrorReporter.java:16)
+	at net.minecraft.world.level.chunk.storage.ChunkIOErrorReporter.reportMisplacedChunk(ChunkIOErrorReporter.java:24)
+	at net.minecraft.world.level.chunk.storage.SerializableChunkData.read(SerializableChunkData.java:230)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleChunkLoad$3(ChunkMap.java:602)
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:667)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:503)
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:173)
+	at net.minecraft.server.level.ServerChunkCache$MainThreadExecutor.doRunTask(ServerChunkCache.java:623)
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:147)
+	at net.minecraft.server.level.ServerChunkCache$MainThreadExecutor.pollTask(ServerChunkCache.java:632)
+	at net.minecraft.server.level.ServerChunkCache.pollTask(ServerChunkCache.java:270)
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:921)
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:909)
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:156)
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:880)
+	at net.minecraft.server.MinecraftServer.prepareLevels(MinecraftServer.java:590)
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:423)
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:221)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:741)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: IO-Worker-4
+Stacktrace:
+	at net.minecraft.world.level.chunk.storage.ChunkIOErrorReporter.createMisplacedChunkReport(ChunkIOErrorReporter.java:16)
+	at net.minecraft.world.level.chunk.storage.ChunkIOErrorReporter.reportMisplacedChunk(ChunkIOErrorReporter.java:24)
+	at net.minecraft.world.level.chunk.storage.SerializableChunkData.read(SerializableChunkData.java:230)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleChunkLoad$3(ChunkMap.java:602)
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:667)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:503)
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:173)
+	at net.minecraft.server.level.ServerChunkCache$MainThreadExecutor.doRunTask(ServerChunkCache.java:623)
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:147)
+	at net.minecraft.server.level.ServerChunkCache$MainThreadExecutor.pollTask(ServerChunkCache.java:632)
+	at net.minecraft.server.level.ServerChunkCache.pollTask(ServerChunkCache.java:270)
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:921)
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:909)
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:156)
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:880)
+	at net.minecraft.server.MinecraftServer.prepareLevels(MinecraftServer.java:590)
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:423)
+
+-- Misplaced Chunk --
+Details:
+	Stored Position: [-2, -7]
+Stacktrace:
+	at net.minecraft.world.level.chunk.storage.ChunkIOErrorReporter.createMisplacedChunkReport(ChunkIOErrorReporter.java:16)
+	at net.minecraft.world.level.chunk.storage.ChunkIOErrorReporter.reportMisplacedChunk(ChunkIOErrorReporter.java:24)
+	at net.minecraft.world.level.chunk.storage.SerializableChunkData.read(SerializableChunkData.java:230)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleChunkLoad$3(ChunkMap.java:602)
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:667)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:503)
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:173)
+	at net.minecraft.server.level.ServerChunkCache$MainThreadExecutor.doRunTask(ServerChunkCache.java:623)
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:147)
+	at net.minecraft.server.level.ServerChunkCache$MainThreadExecutor.pollTask(ServerChunkCache.java:632)
+	at net.minecraft.server.level.ServerChunkCache.pollTask(ServerChunkCache.java:270)
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:921)
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:909)
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:156)
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:880)
+	at net.minecraft.server.MinecraftServer.prepareLevels(MinecraftServer.java:590)
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:423)
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:221)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:741)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
+-- Chunk Info --
+Details:
+	Level: world
+	Dimension: minecraft:overworld
+	Storage: chunk
+	Position: [-19, -19]
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.lambda$storeChunkIoError$0(MinecraftServer.java:2246)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
+-- System Details --
+Details:
+	Minecraft Version: 26.2
+	Minecraft Version ID: 26.2
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 25.0.2, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 1667785512 bytes (1590 MiB) / 2147483648 bytes (2048 MiB) up to 52613349376 bytes (50176 MiB)
+	Memory (heap): init: 2048MiB, used: 436MiB, committed: 2048MiB, max: 50176MiB
+	Memory (non-head): init: 007MiB, used: 139MiB, committed: 141MiB, max: 000MiB
+	CPUs: 48
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen Threadripper 7960X 24-Cores          
+	Identifier: AuthenticAMD Family 25 Model 24 Stepping 1
+	Microarchitecture: Zen 3
+	Frequency (GHz): 4.19
+	Number of physical packages: 1
+	Number of physical CPUs: 24
+	Number of logical CPUs: 48
+	Graphics card #0 name: NVIDIA GeForce RTX 4060
+	Graphics card #0 vendor: NVIDIA
+	Graphics card #0 VRAM (MiB): 8188.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 32.0.15.9186
+	Memory slot #0 capacity (MiB): 32768.00
+	Memory slot #0 clockSpeed (GHz): 4.80
+	Memory slot #0 type: DDR5
+	Memory slot #1 capacity (MiB): 32768.00
+	Memory slot #1 clockSpeed (GHz): 4.80
+	Memory slot #1 type: DDR5
+	Virtual memory max (MiB): 69137.76
+	Virtual memory used (MiB): 10215.61
+	Swap memory total (MiB): 4096.00
+	Swap memory used (MiB): 0.00
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 559270.25, total: 966368.00
+	Space in storage for workdir (MiB): available: 559270.25, total: 966368.00
+	Operating System Version: Microsoft Windows 11 build 26200
+	Process Elevated: false
+	Process Loads: Uptime: 9s, user: 48s (509.85%), kernel: 7s (75.56%), total: 56s (585.41%)
+	Process Virtual Size (MiB): 4091.59
+	Process Resident Size (MiB): 2505.21
+	JVM Flags: 5 total; -Xmx49G -Xms2G -XX:+UseG1GC -XX:G1PeriodicGCInterval=30000 -XX:G1PeriodicGCSystemLoadThreshold=0.0
+	Debug Flags: 0 total; 

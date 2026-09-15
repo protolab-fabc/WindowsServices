@@ -726,7 +726,8 @@
     "criteria": {
       "golden_apple": "2026-09-04 22:10:35 +0200",
       "rotten_flesh": "2026-09-04 23:15:15 +0200",
-      "enchanted_golden_apple": "2026-09-05 00:08:08 +0200"
+      "enchanted_golden_apple": "2026-09-05 00:08:08 +0200",
+      "cooked_mutton": "2026-09-15 20:33:15 +0200"
     },
     "done": false
   },
@@ -1204,6 +1205,24 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/firework_rocket_simple": {
+    "criteria": {
+      "has_gunpowder": "2026-09-05 00:03:47 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/tnt": {
+    "criteria": {
+      "has_gunpowder": "2026-09-05 00:03:47 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/mojang_banner_pattern": {
+    "criteria": {
+      "has_enchanted_golden_apple": "2026-09-05 00:07:59 +0200"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/pink_dye_from_pink_petals": {
     "criteria": {
       "has_pink_petals": "2026-09-05 00:26:36 +0200"
@@ -1273,24 +1292,6 @@
   "minecraft:recipes/decorations/sandstone_wall": {
     "criteria": {
       "has_sandstone": "2026-09-05 00:30:09 +0200"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/firework_rocket_simple": {
-    "criteria": {
-      "has_gunpowder": "2026-09-05 00:03:47 +0200"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/tnt": {
-    "criteria": {
-      "has_gunpowder": "2026-09-05 00:03:47 +0200"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/mojang_banner_pattern": {
-    "criteria": {
-      "has_enchanted_golden_apple": "2026-09-05 00:07:59 +0200"
     },
     "done": true
   },
