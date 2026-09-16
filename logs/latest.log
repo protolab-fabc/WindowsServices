@@ -1,34 +1,19 @@
-[01:00:03] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
-[01:00:03] [RCON Client /127.0.0.1 #2/INFO]: Thread RCON Client /127.0.0.1 shutting down
-[01:00:04] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
-[01:00:04] [Server thread/INFO]: [Not Secure] [Rcon] [SERVEUR] Maintenance automatique dans 1 minute. Deconnexion imminente pour backup.
-[01:00:04] [RCON Client /127.0.0.1 #3/INFO]: Thread RCON Client /127.0.0.1 shutting down
-[01:00:50] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
-[01:00:50] [Server thread/INFO]: [Not Secure] [Rcon] [SERVEUR] Backup et redemarrage dans 15 secondes.
-[01:00:50] [RCON Client /127.0.0.1 #4/INFO]: Thread RCON Client /127.0.0.1 shutting down
-[01:01:05] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
-[01:01:05] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[01:01:05] [Server thread/INFO]: ThreadedAnvilChunkStorage (lobby): All chunks are saved
-[01:01:05] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[01:01:05] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[01:01:05] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[01:01:05] [Server thread/INFO]: [Rcon: Saved the game]
-[01:01:05] [RCON Client /127.0.0.1 #5/INFO]: Thread RCON Client /127.0.0.1 shutting down
-[01:01:06] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
-[01:01:06] [RCON Client /127.0.0.1 #6/INFO]: Thread RCON Client /127.0.0.1 shutting down
-[01:01:07] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
-[01:01:07] [Server thread/INFO]: [Rcon: Stopping the server]
-[01:01:07] [RCON Client /127.0.0.1 #7/INFO]: Thread RCON Client /127.0.0.1 shutting down
-[01:01:07] [Server thread/INFO]: Stopping server
-[01:01:07] [Server thread/INFO]: Saving players
-[01:01:07] [Server thread/INFO]: Saving worlds
-[01:01:07] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[01:01:07] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/hub:lobby
-[01:01:07] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
-[01:01:07] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
-[01:01:07] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[01:01:07] [Server thread/INFO]: ThreadedAnvilChunkStorage (lobby): All chunks are saved
-[01:01:07] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[01:01:07] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[01:01:07] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[01:01:07] [Server thread/INFO]: Thread RCON Listener stopped
+[00:59:57] [ServerMain/WARN]: Failed to locate performance object for Process in the registry. Performance counters may be corrupt. Pdh call failed with error code 0xC0000BB8
+[00:59:57] [ServerMain/INFO]: Disabling further attempts to query Process.
+[00:59:59] [ServerMain/INFO]: Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
+[00:59:59] [ServerMain/ERROR]: Failed to start the minecraft server
+java.io.IOException: Le processus ne peut pas accéder au fichier car un autre processus en a verrouillé une partie
+	at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:74)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:81)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
+	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:355)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:335)
+	at net.minecraft.util.DirectoryLock.create(DirectoryLock.java:35)
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.createLock(LevelStorageSource.java:412)
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.<init>(LevelStorageSource.java:408)
+	at net.minecraft.world.level.storage.LevelStorageSource.validateAndCreateAccess(LevelStorageSource.java:387)
+	at net.minecraft.server.Main.main(Main.java:142)
+	at net.minecraft.bundler.Main.lambda$run$0(Main.java:54)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
