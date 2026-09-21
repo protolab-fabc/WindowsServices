@@ -1,7 +1,7 @@
-[00:59:54] [ServerMain/WARN]: Failed to locate performance object for Process in the registry. Performance counters may be corrupt. Pdh call failed with error code 0xC0000BB8
-[00:59:54] [ServerMain/INFO]: Disabling further attempts to query Process.
-[00:59:56] [ServerMain/INFO]: Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
-[00:59:56] [ServerMain/ERROR]: Failed to start the minecraft server
+[01:00:18] [ServerMain/WARN]: Failed to locate performance object for Process in the registry. Performance counters may be corrupt. Pdh call failed with error code 0xC0000BB8
+[01:00:18] [ServerMain/INFO]: Disabling further attempts to query Process.
+[01:00:20] [ServerMain/INFO]: Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
+[01:00:20] [ServerMain/ERROR]: Failed to start the minecraft server
 java.io.IOException: Le processus ne peut pas accéder au fichier car un autre processus en a verrouillé une partie
 	at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
 	at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:74)
