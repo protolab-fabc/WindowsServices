@@ -1394,3 +1394,28 @@
 [30-09-26 01:00:04] INFO - Nettoyage des anciennes sauvegardes (conservation des 30 plus recentes).
 [30-09-26 01:00:04] [6/8] Synchronisation et push du projet sur GitHub...
 [30-09-26 01:00:04] INFO [Git] - Execution de la synchronisation et rotation des backups sur GitHub (Max 2)...
+[30-09-26 01:00:17] OK [Git] - Backup et rotation GitHub effectues avec succes (2 sauvegardes conservees) !
+[30-09-26 01:00:17] [7/8] Aucune mise a jour a telecharger.
+[30-09-26 01:00:17] [8/8] Redemarrage du serveur Minecraft...
+[30-09-26 01:00:17] OK - Processus Java lance (-Xmx49G -Xms2G -XX:+UseG1GC -XX:G1PeriodicGCInterval=30000 -XX:G1PeriodicGCSystemLoadThreshold=0.0)
+[30-09-26 01:00:20] OK - Serveur redemarre et operationnel.
+[30-09-26 01:00:20] RESULTAT : SAUVEGARDE ET PUSH GITHUB TERMINES AVEC SUCCES (SERVEUR A JOUR).
+[30-09-26 01:00:20] FIN DE LA MAINTENANCE.
+[30-09-26 01:00:23] ============================================================
+[30-09-26 01:00:23] Demarrage maintenance Minecraft
+[30-09-26 01:00:23] Date : 30-09-26 01:00:23
+[30-09-26 01:00:23] Dossier serveur : C:\WindowsServices
+[30-09-26 01:00:23] [1/8] Lecture de la derniere version stable Minecraft...
+[30-09-26 01:00:23] OK - Derniere version stable Mojang : 26.3
+[30-09-26 01:00:23] Version locale actuelle : 26.3
+[30-09-26 01:00:23] INFO - Serveur deja a jour (26.3)
+[30-09-26 01:00:24] [2/8] Verification de l'etat du serveur...
+[30-09-26 01:00:24] INFO - Le serveur Minecraft est actuellement arrete.
+[30-09-26 01:00:24] [3/8] Pas de joueurs a avertir (serveur arrete).
+[30-09-26 01:00:24] [4/8] Pas d'arret requis (serveur deja arrete).
+[30-09-26 01:00:24] [5/8] Creation de la sauvegarde compresse...
+[30-09-26 01:00:24] Creation de l'archive : C:\WindowsServices\backups\backup_20260930_010024.zip
+[30-09-26 01:00:24] OK - Sauvegarde reussie : C:\WindowsServices\backups\backup_20260930_010024.zip (182,34 Mo)
+[30-09-26 01:00:24] INFO - Nettoyage des anciennes sauvegardes (conservation des 30 plus recentes).
+[30-09-26 01:00:24] [6/8] Synchronisation et push du projet sur GitHub...
+[30-09-26 01:00:24] INFO [Git] - Execution de la synchronisation et rotation des backups sur GitHub (Max 2)...
