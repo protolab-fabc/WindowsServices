@@ -1295,5 +1295,17 @@
     },
     "done": true
   },
-  "DataVersion": 4903
+  "minecraft:recipes/building_blocks/white_wool_slab": {
+    "criteria": {
+      "has_white_wool": "2026-10-11 18:16:44 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/white_wool_stairs": {
+    "criteria": {
+      "has_white_wool": "2026-10-11 18:16:44 +0200"
+    },
+    "done": true
+  },
+  "DataVersion": 5023
 }
