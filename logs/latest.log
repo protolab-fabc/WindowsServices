@@ -1,19 +1,23 @@
-[00:59:51] [ServerMain/WARN]: Failed to locate performance object for Process in the registry. Performance counters may be corrupt. Pdh call failed with error code 0xC0000BB8
-[00:59:51] [ServerMain/INFO]: Disabling further attempts to query Process.
-[00:59:54] [ServerMain/INFO]: Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
-[00:59:54] [ServerMain/ERROR]: Failed to start the minecraft server
-java.io.IOException: Le processus ne peut pas accéder au fichier car un autre processus en a verrouillé une partie
-	at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
-	at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:74)
-	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:81)
-	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
-	at java.base/sun.nio.ch.FileChannelImpl.implWrite(FileChannelImpl.java:355)
-	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:335)
-	at net.minecraft.util.DirectoryLock.create(DirectoryLock.java:35)
-	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.createLock(LevelStorageSource.java:412)
-	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.<init>(LevelStorageSource.java:408)
-	at net.minecraft.world.level.storage.LevelStorageSource.validateAndCreateAccess(LevelStorageSource.java:387)
-	at net.minecraft.server.Main.main(Main.java:142)
-	at net.minecraft.bundler.Main.lambda$run$0(Main.java:54)
-	at java.base/java.lang.Thread.run(Thread.java:1474)
+[21:50:00] [ServerMain/WARN]: Failed to locate performance object for Process in the registry. Performance counters may be corrupt. Pdh call failed with error code 0xC0000BB8
+[21:50:00] [ServerMain/INFO]: Disabling further attempts to query Process.
+[21:50:04] [ServerMain/INFO]: Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
+[21:50:05] [Worker-Main-34/INFO]: Loaded 1866 advancements
+[21:50:06] [Server thread/INFO]: Starting minecraft server version 26.3
+[21:50:06] [Server thread/INFO]: Loading properties
+[21:50:06] [Server thread/INFO]: Default game type: SURVIVAL
+[21:50:06] [Server thread/INFO]: Generating keypair
+[21:50:06] [Server thread/INFO]: Starting Minecraft server on *:25565
+[21:50:06] [Server thread/INFO]: Preparing level "world"
+[21:50:06] [Server thread/INFO]: Loading 697 persistent chunks...
+[21:50:06] [Server thread/INFO]: Preparing spawn area: 1%
+[21:50:07] [Server thread/INFO]: Preparing spawn area: 1%
+[21:50:07] [Server thread/INFO]: Preparing spawn area: 31%
+[21:50:07] [Server thread/INFO]: Time elapsed: 1231 ms
+[21:50:07] [Server thread/INFO]: Done (1.552s)! For help, type "help"
+[21:50:07] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[21:50:08] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/hub:lobby
+[21:50:08] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[21:50:08] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[21:50:08] [Server thread/WARN]: [net.minecraft.commands.arguments.blocks.BlockInput] Serialization errors:
+: Failed to decode value '{color:"gold",has_glowing_text:1b,messages:['{"text":"✦ HUB ✦","bold":true,"color":"gold"}','{"text":"Retour au Hub","color":"yellow"}','{"text":"Peak Island","color":"gray"}','{"text":"✦ ✦ ✦","color":"gold"}']}' from field 'front_text': Unknown element name:gold
+[21:51:08] [Server thread/INFO]: Server empty for 60 seconds, pausing
