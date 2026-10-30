@@ -1,23 +1,21 @@
-[21:50:00] [ServerMain/WARN]: Failed to locate performance object for Process in the registry. Performance counters may be corrupt. Pdh call failed with error code 0xC0000BB8
-[21:50:00] [ServerMain/INFO]: Disabling further attempts to query Process.
-[21:50:04] [ServerMain/INFO]: Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
-[21:50:05] [Worker-Main-34/INFO]: Loaded 1866 advancements
-[21:50:06] [Server thread/INFO]: Starting minecraft server version 26.3
-[21:50:06] [Server thread/INFO]: Loading properties
-[21:50:06] [Server thread/INFO]: Default game type: SURVIVAL
-[21:50:06] [Server thread/INFO]: Generating keypair
-[21:50:06] [Server thread/INFO]: Starting Minecraft server on *:25565
-[21:50:06] [Server thread/INFO]: Preparing level "world"
-[21:50:06] [Server thread/INFO]: Loading 697 persistent chunks...
-[21:50:06] [Server thread/INFO]: Preparing spawn area: 1%
-[21:50:07] [Server thread/INFO]: Preparing spawn area: 1%
-[21:50:07] [Server thread/INFO]: Preparing spawn area: 31%
-[21:50:07] [Server thread/INFO]: Time elapsed: 1231 ms
-[21:50:07] [Server thread/INFO]: Done (1.552s)! For help, type "help"
-[21:50:07] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[21:50:08] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/hub:lobby
-[21:50:08] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
-[21:50:08] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
-[21:50:08] [Server thread/WARN]: [net.minecraft.commands.arguments.blocks.BlockInput] Serialization errors:
+[01:01:57] [ServerMain/WARN]: Failed to locate performance object for Process in the registry. Performance counters may be corrupt. Pdh call failed with error code 0xC0000BB8
+[01:01:57] [ServerMain/INFO]: Disabling further attempts to query Process.
+[01:02:02] [ServerMain/INFO]: Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
+[01:02:02] [ServerMain/ERROR]: Failed to start the minecraft server
+java.io.IOException: Le processus ne peut pas accéder au fichier car un autre processus en a verrouillé une partie
+	at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:74)
+	at java.base/sun.nio.ch.IOUtil.writeFr[01:02:02] [Server thread/INFO]: Preparing level "world"
+[01:02:02] [Server thread/INFO]: Loading 697 persistent chunks...
+[01:02:02] [Server thread/INFO]: Preparing spawn area: 1%
+[01:02:02] [Server thread/INFO]: Preparing spawn area: 1%
+[01:02:03] [Server thread/INFO]: Preparing spawn area: 35%
+[01:02:03] [Server thread/INFO]: Time elapsed: 1259 ms
+[01:02:03] [Server thread/INFO]: Done (1.581s)! For help, type "help"
+[01:02:03] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[01:02:04] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/hub:lobby
+[01:02:04] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[01:02:04] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[01:02:04] [Server thread/WARN]: [net.minecraft.commands.arguments.blocks.BlockInput] Serialization errors:
 : Failed to decode value '{color:"gold",has_glowing_text:1b,messages:['{"text":"✦ HUB ✦","bold":true,"color":"gold"}','{"text":"Retour au Hub","color":"yellow"}','{"text":"Peak Island","color":"gray"}','{"text":"✦ ✦ ✦","color":"gold"}']}' from field 'front_text': Unknown element name:gold
-[21:51:08] [Server thread/INFO]: Server empty for 60 seconds, pausing
+[01:03:04] [Server thread/INFO]: Server empty for 60 seconds, pausing
