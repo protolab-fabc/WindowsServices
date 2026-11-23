@@ -1,7 +1,7 @@
-[00:08:45] [ServerMain/WARN]: Failed to locate performance object for Process in the registry. Performance counters may be corrupt. Pdh call failed with error code 0xC0000BB8
-[00:08:45] [ServerMain/INFO]: Disabling further attempts to query Process.
-[00:08:48] [ServerMain/INFO]: Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
-[00:08:48] [ServerMain/ERROR]: Failed to start the minecraft server
+[22:57:50] [ServerMain/WARN]: Failed to locate performance object for Process in the registry. Performance counters may be corrupt. Pdh call failed with error code 0xC0000BB8
+[22:57:50] [ServerMain/INFO]: Disabling further attempts to query Process.
+[22:57:53] [ServerMain/INFO]: Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
+[22:57:53] [ServerMain/ERROR]: Failed to start the minecraft server
 java.io.IOException: Le processus ne peut pas accéder au fichier car un autre processus en a verrouillé une partie
 	at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
 	at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:74)
@@ -17,10 +17,10 @@ java.io.IOException: Le processus ne peut pas accéder au fichier car un autre p
 	at net.minecraft.server.Main.main(Main.java:142)
 	at net.minecraft.bundler.Main.lambda$run$0(Main.java:54)
 	at java.base/java.lang.Thread.run(Thread.java:1474)
-[00:08:45] [ServerMain/WARN]: Failed to locate performance object for Process in the registry. Performance counters may be corrupt. Pdh call failed with error code 0xC0000BB8
-[00:08:45] [ServerMain/INFO]: Disabling further attempts to query Process.
-[00:08:48] [ServerMain/INFO]: Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
-[00:08:48] [ServerMain/ERROR]: Failed to start the minecraft server
+[22:57:50] [ServerMain/WARN]: Failed to locate performance object for Process in the registry. Performance counters may be corrupt. Pdh call failed with error code 0xC0000BB8
+[22:57:50] [ServerMain/INFO]: Disabling further attempts to query Process.
+[22:57:53] [ServerMain/INFO]: Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
+[22:57:53] [ServerMain/ERROR]: Failed to start the minecraft server
 java.io.IOException: Le processus ne peut pas accéder au fichier car un autre processus en a verrouillé une partie
 	at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
 	at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:74)
